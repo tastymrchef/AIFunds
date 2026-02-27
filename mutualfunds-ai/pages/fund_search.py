@@ -1,5 +1,5 @@
 from utils.fund_data import search_funds, get_fund_data, calculate_returns, get_nifty_data, calculate_nifty_returns
-from utils.ai_utils import get_ai_summary, get_fund_manager_info
+from utils.ai_utils import chat_with_fund, get_ai_summary, get_fund_manager_and_holdings, build_fund_system_prompt
 from utils.charts import build_comparison_chart
 
 import streamlit as st
@@ -119,9 +119,70 @@ if query:
             st.divider()
             st.subheader("Fund Manager")
 
-            with st.spinner("Researching fund manager..."):
-                manager_info = get_fund_manager_info(
+            with st.spinner("Researching fund manager and research holdings..."):
+                manager_info = get_fund_manager_and_holdings(
                     meta["fund_house"],
                     meta["scheme_name"]
                 )
+                st.session_state.manager_info = manager_info
                 st.write(manager_info)
+
+            st.divider()
+            st.subheader("💬 Ask Anything About This Fund")
+            st.caption("Powered by AI — ask about performance, risk, fund manager, suitability, or anything else")
+
+            # Reset chat if a new fund is loaded
+            current_fund = meta["scheme_name"]
+            if st.session_state.get("current_fund") != current_fund:
+                st.session_state.chat_messages = []
+                st.session_state.current_fund = current_fund
+                st.session_state.fund_system_prompt = build_fund_system_prompt(
+                    meta,
+                    nav_data,
+                    returns,
+                    st.session_state.get("manager_info", "Not available")
+                )
+
+            # Initialize chat history in session state
+            if "chat_messages" not in st.session_state:
+                st.session_state.chat_messages = []
+
+            if "fund_system_prompt" not in st.session_state:
+                st.session_state.fund_system_prompt = build_fund_system_prompt(
+                    meta,
+                    nav_data,
+                    returns,
+                    st.session_state.get("manager_info", "Not available")
+                )
+
+            # Display chat history
+            for msg in st.session_state.chat_messages:
+                with st.chat_message(msg["role"]):
+                    st.write(msg["content"])
+
+            # Chat input
+            user_input = st.chat_input("Ask something about this fund...")
+
+            if user_input:
+                # Add user message to history
+                st.session_state.chat_messages.append({
+                    "role": "user",
+                    "content": user_input
+                })
+                
+                # Build full message list with system prompt
+                messages = [
+                    {"role": "system", "content": st.session_state.fund_system_prompt}
+                ] + st.session_state.chat_messages
+                
+                # Get AI response
+                with st.spinner("Thinking..."):
+                    response = chat_with_fund(messages)
+                
+                # Add response to history
+                st.session_state.chat_messages.append({
+                    "role": "assistant",
+                    "content": response
+                })
+                
+                st.rerun()
