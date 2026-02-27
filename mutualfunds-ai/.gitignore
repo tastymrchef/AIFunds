@@ -1,0 +1,39 @@
+# Environment / secrets
+.env
+
+# Virtual environments (common names in this repo)
+AI/
+.venv/
+.venv313/
+venv/
+env/
+
+# Python cache / compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and runtime
+*.log
+runtime/
+
+# Streamlit cache
+streamlit/__pycache__/
+.streamlit/
+
+# Local dotenv files
+.env.local
+.env.*.local

@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-02-27 07:55",
+  "data": {
+    "Large Cap": [
+    {
+        "scheme_code": 119589,
+        "name": "Mirae Asset Large Cap Fund - Growth Plan",
+        "return_1y": 14.49,
+        "return_6m": 7.2
+    },
+    {
+        "scheme_code": 118989,
+        "name": "HDFC Top 100 Fund - Regular Plan - Growth",
+        "return_1y": 13.1,
+        "return_6m": 6.8
+    },
+    {
+        "scheme_code": 119598,
+        "name": "SBI Bluechip Fund - Regular Plan - Growth",
+        "return_1y": 12.4,
+        "return_6m": 6.1
+    }
+    ],
+    "Small Cap": [
+      {
+        "scheme_code": 113177,
+        "name": "Nippon India Small Cap Fund - Growth Plan - Growth Option",
+        "return_1y": 14.56,
+        "return_6m": -0.71
+      },
+      {
+        "scheme_code": 125350,
+        "name": "Axis Small Cap Fund - Regular Plan - Growth",
+        "return_1y": 14.17,
+        "return_6m": -0.24
+      },
+      {
+        "scheme_code": 102874,
+        "name": "Kotak-Small Cap Fund - Payout of Income Distribution cum capital withdrawal option",
+        "return_1y": 10.47,
+        "return_6m": -3.8
+      }
+    ],
+    "Mid Cap": [
+      {
+        "scheme_code": 119779,
+        "name": "Kotak Global Emerging Market overseas Equity Omni FOF - Growth - Direct",
+        "return_1y": 54.06,
+        "return_6m": 32.3
+      },
+      {
+        "scheme_code": 148459,
+        "name": "Nippon India Multi Asset Allocation Fund - Regular Plan - Growth Option",
+        "return_1y": 27.92,
+        "return_6m": 14.06
+      },
+      {
+        "scheme_code": 114564,
+        "name": "Axis Midcap Fund - Regular Plan - Growth",
+        "return_1y": 20.08,
+        "return_6m": 3.23
+      }
+    ],
+    "Flexi Cap": [
+      {
+        "scheme_code": 101762,
+        "name": "HDFC Flexi Cap Fund - Growth Plan",
+        "return_1y": 18.01,
+        "return_6m": 5.72
+      },
+      {
+        "scheme_code": 122640,
+        "name": "Parag Parikh Flexi Cap Fund - Regular Plan - Growth",
+        "return_1y": 9.47,
+        "return_6m": 1.54
+      },
+      {
+        "scheme_code": 100668,
+        "name": "UTI Flexi Cap Fund - Regular Plan - IDCW",
+        "return_1y": 3.13,
+        "return_6m": -6.49
+      }
+    ],
+    "Infrastructure": [
+      {
+        "scheme_code": 103390,
+        "name": "CANARA ROBECO INFRASTRUCTURE FUND - REGULAR PLAN - GROWTH OPTION",
+        "return_1y": 26.05,
+        "return_6m": 5.95
+      },
+      {
+        "scheme_code": 101262,
+        "name": "Nippon India Power & Infra Fund-Growth Plan -Growth Option",
+        "return_1y": 22.36,
+        "return_6m": 6.69
+      },
+      {
+        "scheme_code": 107524,
+        "name": "HDFC Infrastructure Fund - Growth Plan",
+        "return_1y": 19.32,
+        "return_6m": 3.37
+      }
+    ],
+    "Defence": [
+      {
+        "scheme_code": 152711,
+        "name": "Motilal Oswal Nifty India Defence Index Fund Regular Plan Growth",
+        "return_1y": 55.31,
+        "return_6m": 10.57
+      },
+      {
+        "scheme_code": 152800,
+        "name": "Aditya Birla Sun Life Nifty India Defence Index Fund-Regular-Growth",
+        "return_1y": 54.78,
+        "return_6m": 10.46
+      },
+      {
+        "scheme_code": 151748,
+        "name": "HDFC Defence Fund - IDCW Option",
+        "return_1y": 49.86,
+        "return_6m": 10.36
+      }
+    ],
+    "Technology": [
+      {
+        "scheme_code": 118537,
+        "name": "Franklin India Technology Fund - Direct - Growth",
+        "return_1y": -6.66,
+        "return_6m": -9.39
+      },
+      {
+        "scheme_code": 120577,
+        "name": "SBI TECHNOLOGY OPPORTUNITIES FUND - REGULAR PLAN - GROWTH",
+        "return_1y": -6.87,
+        "return_6m": -11.16
+      },
+      {
+        "scheme_code": 103168,
+        "name": "Aditya Birla Sun Life Digital India Fund - Growth - Regular Plan",
+        "return_1y": -12.31,
+        "return_6m": -12.04
+      }
+    ],
+    "Banking & Financial Services": [
+      {
+        "scheme_code": 133858,
+        "name": "SBI BANKING & FINANCIAL SERVICES FUND - REGULAR PLAN - GROWTH",
+        "return_1y": 29.44,
+        "return_6m": 13.49
+      },
+      {
+        "scheme_code": 151381,
+        "name": "Kotak Banking & Financial Services Fund - Regular Plan - Growth",
+        "return_1y": 26.33,
+        "return_6m": 13.42
+      },
+      {
+        "scheme_code": 135794,
+        "name": "Tata Banking And Financial Services Fund-Regular Plan-Growth",
+        "return_1y": 24.66,
+        "return_6m": 11.36
+      }
+    ],
+    "International": [
+      {
+        "scheme_code": 145551,
+        "name": "Motilal Oswal Nasdaq 100 Fund of Fund- Regular Plan Growth",
+        "return_1y": 15.48,
+        "return_6m": 10.74
+      },
+      {
+        "scheme_code": 148929,
+        "name": "Mirae Asset NYSE FANG + ETF Fund of Fund Regular Growth",
+        "return_1y": 13.42,
+        "return_6m": -4.03
+      },
+      {
+        "scheme_code": 138528,
+        "name": "PGIM India Global Equity Opportunities Fund of Fund- Direct Plan - Growth",
+        "return_1y": 6.98,
+        "return_6m": -0.25
+      }
+    ]
+  }
+}
