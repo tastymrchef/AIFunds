@@ -27,12 +27,27 @@ def calculate_returns(nav_data):
 
     current_nav = float(nav_data[0]["nav"])
     returns = {}
-    
-    for label, days in [("1 Year", 365), ("3 Year", 1095), ("5 Year", 1825), ("10 Year", 3650)]:
-        nav = get_nav_on(days)
-        if nav:
-            returns[label] = round(((current_nav - nav) / nav) * 100, 2)
-    
+
+    # 1Y — absolute return
+    nav_1y = get_nav_on(365)
+    if nav_1y:
+        returns["1 Year"] = round(((current_nav - nav_1y) / nav_1y) * 100, 2)
+
+    # 3Y — CAGR
+    nav_3y = get_nav_on(1095)
+    if nav_3y:
+        returns["3 Year"] = round(((current_nav / nav_3y) ** (1/3) - 1) * 100, 2)
+
+    # 5Y — CAGR
+    nav_5y = get_nav_on(1825)
+    if nav_5y:
+        returns["5 Year"] = round(((current_nav / nav_5y) ** (1/5) - 1) * 100, 2)
+
+    # 10Y — CAGR
+    nav_10y = get_nav_on(3650)
+    if nav_10y:
+        returns["10 Year"] = round(((current_nav / nav_10y) ** (1/10) - 1) * 100, 2)
+
     return returns
 
 

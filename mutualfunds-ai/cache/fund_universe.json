@@ -1,0 +1,1420 @@
+{
+  "generated_at": "2026-02-27 13:42",
+  "total_funds": 101,
+  "data": [
+    {
+      "scheme_code": 100033,
+      "name": "Aditya Birla Sun Life Large & Mid Cap Fund - Regular Growth",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "category": "Equity Scheme - Large & Mid Cap Fund",
+      "returns": {
+        "1y": 19.23,
+        "3y": 60.64,
+        "5y": 72.44
+      },
+      "volatility": 0.8961,
+      "max_drawdown": 45.56,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 100081,
+      "name": "DSP Aggressive Hybrid Fund- Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 10.02,
+        "3y": 56.64,
+        "5y": 79.21
+      },
+      "volatility": 0.5467,
+      "max_drawdown": 44.58,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 100175,
+      "name": "quant ELSS Tax Saver Fund - Growth Option - Regular Plan",
+      "fund_house": "quant Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 18.44,
+        "3y": 67.49,
+        "5y": 145.68
+      },
+      "volatility": 0.9962,
+      "max_drawdown": 53.33,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 100177,
+      "name": "quant Small Cap Fund - Growth - Regular Plan",
+      "fund_house": "quant Mutual Fund",
+      "category": "Equity Scheme - Small Cap Fund",
+      "returns": {
+        "1y": 8.99,
+        "3y": 72.37,
+        "5y": 199.24
+      },
+      "volatility": 1.0442,
+      "max_drawdown": 62.37,
+      "sector": "Small Cap"
+    },
+    {
+      "scheme_code": 100219,
+      "name": "JM Large Cap Fund (Regular) - Growth Option",
+      "fund_house": "JM Financial Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 13.79,
+        "3y": 58.25,
+        "5y": 90.1
+      },
+      "volatility": 0.8315,
+      "max_drawdown": 49.58,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 100221,
+      "name": "JM Aggressive Hybrid Fund (Regular) -Growth Option",
+      "fund_house": "JM Financial Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 6.17,
+        "3y": 63.99,
+        "5y": 102.27
+      },
+      "volatility": 0.7247,
+      "max_drawdown": 53.63,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 100254,
+      "name": "JM Value Fund (Regular) - Growth Option",
+      "fund_house": "JM Financial Mutual Fund",
+      "category": "Equity Scheme - Value Fund",
+      "returns": {
+        "1y": 7.67,
+        "3y": 73.11,
+        "5y": 123.51
+      },
+      "volatility": 0.9846,
+      "max_drawdown": 61.17,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 100313,
+      "name": "LIC MF Flexi Cap Fund-Regular Plan-Growth",
+      "fund_house": "LIC Mutual Fund",
+      "category": "Equity Scheme - Flexi Cap Fund",
+      "returns": {
+        "1y": 16.19,
+        "3y": 54.52,
+        "5y": 76.15
+      },
+      "volatility": 0.9925,
+      "max_drawdown": 47.1,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 100323,
+      "name": "LIC MF Aggressive Hybrid Fund-Regular Plan-Growth",
+      "fund_house": "LIC Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 14.03,
+        "3y": 47.76,
+        "5y": 63.77
+      },
+      "volatility": 0.6994,
+      "max_drawdown": 39.85,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 100414,
+      "name": "Tata Aggressive Hybrid Fund- Regular Plan - Growth Option",
+      "fund_house": "Tata Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 12.3,
+        "3y": 42.15,
+        "5y": 72.4
+      },
+      "volatility": 0.5848,
+      "max_drawdown": 39.48,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 100475,
+      "name": "Tata Large Cap Fund -Regular Plan - Growth Option",
+      "fund_house": "Tata Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 15.11,
+        "3y": 58.24,
+        "5y": 90.92
+      },
+      "volatility": 0.7722,
+      "max_drawdown": 45.78,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 100476,
+      "name": "Taurus Flexi Cap Fund - Regular Plan - Growth ",
+      "fund_house": "Taurus Mutual Fund",
+      "category": "Equity Scheme - Flexi Cap Fund",
+      "returns": {
+        "1y": 9.38,
+        "3y": 58.55,
+        "5y": 79.58
+      },
+      "volatility": 0.8363,
+      "max_drawdown": 48.27,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 100477,
+      "name": "Taurus Mid Cap Fund - Regular Plan - Growth",
+      "fund_house": "Taurus Mutual Fund",
+      "category": "Equity Scheme - Mid Cap Fund",
+      "returns": {
+        "1y": 13.95,
+        "3y": 58.15,
+        "5y": 94.68
+      },
+      "volatility": 1.0679,
+      "max_drawdown": 53.08,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 100480,
+      "name": "Taurus ELSS Tax Saver Fund - Regular Plan - Growth",
+      "fund_house": "Taurus Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 4.89,
+        "3y": 50.89,
+        "5y": 87.14
+      },
+      "volatility": 0.7891,
+      "max_drawdown": 47.56,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 100601,
+      "name": "CANARA ROBECO CONSERVATIVE HYBRID FUND - REGULAR PLAN - GROWTH OPTION",
+      "fund_house": "Canara Robeco Mutual Fund",
+      "category": "Hybrid Scheme - Conservative Hybrid Fund",
+      "returns": {
+        "1y": 6.62,
+        "3y": 26.58,
+        "5y": 40.6
+      },
+      "volatility": 0.2081,
+      "max_drawdown": 25.88,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 100631,
+      "name": "quant Multi Cap Fund-GROWTH OPTION - Regular Plan",
+      "fund_house": "quant Mutual Fund",
+      "category": "Equity Scheme - Multi Cap Fund",
+      "returns": {
+        "1y": 4.81,
+        "3y": 41.86,
+        "5y": 104.76
+      },
+      "volatility": 1.0152,
+      "max_drawdown": 51.49,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 100651,
+      "name": "UTI Large Cap Fund - Regular Plan - Growth Option",
+      "fund_house": "UTI Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 10.13,
+        "3y": 46.85,
+        "5y": 73.5
+      },
+      "volatility": 0.718,
+      "max_drawdown": 42.3,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 100664,
+      "name": "UTI Large & Mid Cap Fund - Regular Plan - Growth Option",
+      "fund_house": "UTI Mutual Fund",
+      "category": "Equity Scheme - Large & Mid Cap Fund",
+      "returns": {
+        "1y": 17.95,
+        "3y": 87.19,
+        "5y": 137.38
+      },
+      "volatility": 0.8186,
+      "max_drawdown": 55.03,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 100684,
+      "name": "UTI Aggressive Hybrid Fund - Regular Plan - Growth",
+      "fund_house": "UTI Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 12.13,
+        "3y": 60.97,
+        "5y": 101.81
+      },
+      "volatility": 0.5719,
+      "max_drawdown": 46.17,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 100795,
+      "name": "Sundaram Small Cap Fund Regular Plan - Growth",
+      "fund_house": "Sundaram Mutual Fund",
+      "category": "Equity Scheme - Small Cap Fund",
+      "returns": {
+        "1y": 19.08,
+        "3y": 74.34,
+        "5y": 146.65
+      },
+      "volatility": 1.0386,
+      "max_drawdown": 54.87,
+      "sector": "Small Cap"
+    },
+    {
+      "scheme_code": 100821,
+      "name": "UTI ELSS Tax Saver Fund - Regular Plan - Growth Option",
+      "fund_house": "UTI Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 11.87,
+        "3y": 51.41,
+        "5y": 76.25
+      },
+      "volatility": 0.7618,
+      "max_drawdown": 45.42,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 100865,
+      "name": "LIC MF ELSS Tax Saver-Regular Plan-Growth",
+      "fund_house": "LIC Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 9.31,
+        "3y": 56.5,
+        "5y": 85.8
+      },
+      "volatility": 0.8064,
+      "max_drawdown": 46.45,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 100968,
+      "name": "SBI Conservative Hybrid Fund - Regular Plan - Growth",
+      "fund_house": "SBI Mutual Fund",
+      "category": "Hybrid Scheme - Conservative Hybrid Fund",
+      "returns": {
+        "1y": 9.44,
+        "3y": 34.23,
+        "5y": 56.95
+      },
+      "volatility": 0.2067,
+      "max_drawdown": 31.32,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 101065,
+      "name": "quant Mid Cap Fund - Growth Option - Regular Plan",
+      "fund_house": "quant Mutual Fund",
+      "category": "Equity Scheme - Mid Cap Fund",
+      "returns": {
+        "1y": 2.88,
+        "3y": 55.13,
+        "5y": 147.33
+      },
+      "volatility": 0.9944,
+      "max_drawdown": 57.52,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 101070,
+      "name": "quant Aggressive Hybrid Fund - Growth Option - Regular Plan",
+      "fund_house": "quant Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 16.3,
+        "3y": 50.22,
+        "5y": 116.33
+      },
+      "volatility": 0.7455,
+      "max_drawdown": 43.61,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 101209,
+      "name": "Taurus Large Cap Fund - Regular Plan - Growth",
+      "fund_house": "Taurus Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 14.42,
+        "3y": 66.52,
+        "5y": 83.71
+      },
+      "volatility": 0.8107,
+      "max_drawdown": 47.53,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 101539,
+      "name": "Sundaram Mid Cap Fund Regular Plan - Growth",
+      "fund_house": "Sundaram Mutual Fund",
+      "category": "Equity Scheme - Mid Cap Fund",
+      "returns": {
+        "1y": 23.78,
+        "3y": 100.05,
+        "5y": 150.38
+      },
+      "volatility": 0.9609,
+      "max_drawdown": 58.2,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 101594,
+      "name": "HSBC Large Cap Fund - Regular Growth",
+      "fund_house": "HSBC Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 16.75,
+        "3y": 60.0,
+        "5y": 83.16
+      },
+      "volatility": 0.7929,
+      "max_drawdown": 46.72,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 101635,
+      "name": "DSP Large Cap Fund - Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 11.84,
+        "3y": 66.77,
+        "5y": 93.67
+      },
+      "volatility": 0.6888,
+      "max_drawdown": 49.51,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 101672,
+      "name": "Tata Value Fund - Regular Plan -Growth Option",
+      "fund_house": "Tata Mutual Fund",
+      "category": "Equity Scheme - Value Fund",
+      "returns": {
+        "1y": 16.23,
+        "3y": 75.15,
+        "5y": 118.65
+      },
+      "volatility": 0.8756,
+      "max_drawdown": 53.79,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 101766,
+      "name": "Tata Infrastructure Fund-Regular Plan- Growth Option",
+      "fund_house": "Tata Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 17.12,
+        "3y": 72.52,
+        "5y": 144.78
+      },
+      "volatility": 1.0571,
+      "max_drawdown": 60.26,
+      "sector": "Infrastructure"
+    },
+    {
+      "scheme_code": 101824,
+      "name": "Tata Large & Mid Cap Fund- Regular Plan - Growth Option",
+      "fund_house": "Tata Mutual Fund",
+      "category": "Equity Scheme - Large & Mid Cap Fund",
+      "returns": {
+        "1y": 9.46,
+        "3y": 46.48,
+        "5y": 82.42
+      },
+      "volatility": 0.8164,
+      "max_drawdown": 48.56,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 101853,
+      "name": "Sundaram Value Fund Regular Plan - Growth",
+      "fund_house": "Sundaram Mutual Fund",
+      "category": "Equity Scheme - Value Fund",
+      "returns": {
+        "1y": 14.22,
+        "3y": 50.62,
+        "5y": 85.55
+      },
+      "volatility": 0.7401,
+      "max_drawdown": 43.56,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 101869,
+      "name": "LIC MF Conservative Hybrid Fund-Regular Plan-Growth",
+      "fund_house": "LIC Mutual Fund",
+      "category": "Hybrid Scheme - Conservative Hybrid Fund",
+      "returns": {
+        "1y": 6.21,
+        "3y": 22.75,
+        "5y": 33.46
+      },
+      "volatility": 0.2098,
+      "max_drawdown": 22.51,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 102000,
+      "name": "HDFC Large Cap Fund - Growth Option - Regular Plan",
+      "fund_house": "HDFC Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 13.37,
+        "3y": 60.36,
+        "5y": 100.99
+      },
+      "volatility": 0.7477,
+      "max_drawdown": 48.5,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 102020,
+      "name": "Baroda BNP Paribas MULTI CAP FUND - Regular Plan - Growth Option",
+      "fund_house": "Baroda BNP Paribas Mutual Fund",
+      "category": "Equity Scheme - Multi Cap Fund",
+      "returns": {
+        "1y": 13.16,
+        "3y": 68.68,
+        "5y": 118.97
+      },
+      "volatility": 0.8919,
+      "max_drawdown": 52.51,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 102142,
+      "name": "Sundaram Consumption Fund(Formerly Known as Sundaram Rural and Consumption Fund Regular Plan - Growth)",
+      "fund_house": "Sundaram Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 3.74,
+        "3y": 54.74,
+        "5y": 88.28
+      },
+      "volatility": 0.8047,
+      "max_drawdown": 52.34,
+      "sector": "Consumption"
+    },
+    {
+      "scheme_code": 102252,
+      "name": "HSBC Flexi Cap Fund - Regular Growth",
+      "fund_house": "HSBC Mutual Fund",
+      "category": "Equity Scheme - Flexi Cap Fund",
+      "returns": {
+        "1y": 16.7,
+        "3y": 71.13,
+        "5y": 104.9
+      },
+      "volatility": 0.9715,
+      "max_drawdown": 52.15,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 102262,
+      "name": "HSBC Conservative Hybrid Fund - Regular Growth",
+      "fund_house": "HSBC Mutual Fund",
+      "category": "Hybrid Scheme - Conservative Hybrid Fund",
+      "returns": {
+        "1y": 8.19,
+        "3y": 33.22,
+        "5y": 45.14
+      },
+      "volatility": 0.3187,
+      "max_drawdown": 30.09,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 102328,
+      "name": "Tata Mid Cap Fund Regular Plan- Growth Option",
+      "fund_house": "Tata Mutual Fund",
+      "category": "Equity Scheme - Mid Cap Fund",
+      "returns": {
+        "1y": 21.78,
+        "3y": 86.56,
+        "5y": 135.2
+      },
+      "volatility": 0.8883,
+      "max_drawdown": 54.7,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 102401,
+      "name": "UTI Banking and Financial Services Fund - Regular Plan - Growth Option",
+      "fund_house": "UTI Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 25.76,
+        "3y": 70.0,
+        "5y": 92.65
+      },
+      "volatility": 0.8742,
+      "max_drawdown": 51.79,
+      "sector": "Banking & Financial Services"
+    },
+    {
+      "scheme_code": 102414,
+      "name": "SBI CONTRA FUND - REGULAR PLAN -GROWTH",
+      "fund_house": "SBI Mutual Fund",
+      "category": "Equity Scheme - Contra Fund",
+      "returns": {
+        "1y": 13.59,
+        "3y": 75.26,
+        "5y": 159.79
+      },
+      "volatility": 0.6799,
+      "max_drawdown": 54.12,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 102535,
+      "name": "UTI Conservative Hybrid Fund - Regular Plan - Growth Option",
+      "fund_house": "UTI Mutual Fund",
+      "category": "Hybrid Scheme - Conservative Hybrid Fund",
+      "returns": {
+        "1y": 7.16,
+        "3y": 32.3,
+        "5y": 54.12
+      },
+      "volatility": 0.2154,
+      "max_drawdown": 30.6,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 102756,
+      "name": "SBI FOCUSED FUND - REGULAR PLAN -GROWTH",
+      "fund_house": "SBI Mutual Fund",
+      "category": "Equity Scheme - Focused Fund",
+      "returns": {
+        "1y": 20.08,
+        "3y": 72.88,
+        "5y": 102.33
+      },
+      "volatility": 0.7079,
+      "max_drawdown": 47.72,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 102885,
+      "name": "SBI EQUITY HYBRID FUND - REGULAR PLAN -Growth",
+      "fund_house": "SBI Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 14.59,
+        "3y": 55.55,
+        "5y": 79.18
+      },
+      "volatility": 0.5632,
+      "max_drawdown": 41.27,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 102920,
+      "name": "CANARA ROBECO LARGE AND MID CAP FUND - REGULAR PLAN - GROWTH OPTION",
+      "fund_house": "Canara Robeco Mutual Fund",
+      "category": "Equity Scheme - Large & Mid Cap Fund",
+      "returns": {
+        "1y": 11.49,
+        "3y": 58.9,
+        "5y": 92.72
+      },
+      "volatility": 0.9678,
+      "max_drawdown": 47.74,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 103040,
+      "name": "Kotak Contra Fund - Regular Plan - Growth",
+      "fund_house": "Kotak Mahindra Mutual Fund",
+      "category": "Equity Scheme - Contra Fund",
+      "returns": {
+        "1y": 20.37,
+        "3y": 82.59,
+        "5y": 126.71
+      },
+      "volatility": 0.8143,
+      "max_drawdown": 54.31,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 103098,
+      "name": "UTI Value Fund - Regular Plan - Growth Option",
+      "fund_house": "UTI Mutual Fund",
+      "category": "Equity Scheme - Value Fund",
+      "returns": {
+        "1y": 13.26,
+        "3y": 70.4,
+        "5y": 108.6
+      },
+      "volatility": 0.7811,
+      "max_drawdown": 51.3,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 103155,
+      "name": "Aditya Birla Sun Life Equity Hybrid'95 Fund - Regular Plan-Growth",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 12.89,
+        "3y": 51.43,
+        "5y": 71.74
+      },
+      "volatility": 0.596,
+      "max_drawdown": 39.78,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 103166,
+      "name": "Aditya Birla Sun Life Flexi Cap Fund - Growth - Regular Plan",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "category": "Equity Scheme - Flexi Cap Fund",
+      "returns": {
+        "1y": 19.29,
+        "3y": 71.3,
+        "5y": 101.54
+      },
+      "volatility": 0.7829,
+      "max_drawdown": 49.31,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 103168,
+      "name": "Aditya Birla Sun Life Digital India Fund - Growth - Regular Plan",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": -12.31,
+        "3y": 22.39,
+        "5y": 59.65
+      },
+      "volatility": 1.1033,
+      "max_drawdown": 46.38,
+      "sector": "Technology"
+    },
+    {
+      "scheme_code": 103390,
+      "name": "CANARA ROBECO INFRASTRUCTURE FUND - REGULAR PLAN - GROWTH OPTION",
+      "fund_house": "Canara Robeco Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 26.05,
+        "3y": 105.0,
+        "5y": 192.21
+      },
+      "volatility": 1.0463,
+      "max_drawdown": 60.39,
+      "sector": "Infrastructure"
+    },
+    {
+      "scheme_code": 103504,
+      "name": "SBI Large Cap FUND-REGULAR PLAN GROWTH",
+      "fund_house": "SBI Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 16.28,
+        "3y": 54.79,
+        "5y": 85.37
+      },
+      "volatility": 0.716,
+      "max_drawdown": 44.85,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 103819,
+      "name": "DSP Large & Mid Cap Fund - Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Equity Scheme - Large & Mid Cap Fund",
+      "returns": {
+        "1y": 17.55,
+        "3y": 80.93,
+        "5y": 119.73
+      },
+      "volatility": 0.8038,
+      "max_drawdown": 53.38,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 104636,
+      "name": "Invesco India ELSS Tax Saver Fund - Regular Plan - Growth",
+      "fund_house": "Invesco Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 9.36,
+        "3y": 59.05,
+        "5y": 78.26
+      },
+      "volatility": 0.9027,
+      "max_drawdown": 48.85,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 104772,
+      "name": "DSP ELSS Tax Saver Fund - Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 16.81,
+        "3y": 78.91,
+        "5y": 123.3
+      },
+      "volatility": 0.7797,
+      "max_drawdown": 52.18,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 105417,
+      "name": "Taurus Infrastructure Fund - Regular Plan - Growth",
+      "fund_house": "Taurus Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 13.89,
+        "3y": 73.05,
+        "5y": 112.55
+      },
+      "volatility": 1.0652,
+      "max_drawdown": 55.59,
+      "sector": "Infrastructure"
+    },
+    {
+      "scheme_code": 105460,
+      "name": "Invesco India Contra Fund - Regular Plan - Growth",
+      "fund_house": "Invesco Mutual Fund",
+      "category": "Equity Scheme - Contra Fund",
+      "returns": {
+        "1y": 13.04,
+        "3y": 74.06,
+        "5y": 110.58
+      },
+      "volatility": 0.857,
+      "max_drawdown": 53.44,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 105628,
+      "name": "SBI ELSS Tax Saver FUND - REGULAR PLAN- GROWTH",
+      "fund_house": "SBI Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 14.21,
+        "3y": 93.81,
+        "5y": 148.87
+      },
+      "volatility": 0.7267,
+      "max_drawdown": 57.45,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 105823,
+      "name": "LIC MF Banking & PSU Fund-Regular Plan-Growth",
+      "fund_house": "LIC Mutual Fund",
+      "category": "Debt Scheme - Banking and PSU Fund",
+      "returns": {
+        "1y": 7.12,
+        "3y": 23.48,
+        "5y": 32.01
+      },
+      "volatility": 0.0706,
+      "max_drawdown": 22.45,
+      "sector": "Banking & Financial Services"
+    },
+    {
+      "scheme_code": 105875,
+      "name": "DSP Flexi Cap Fund - Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Equity Scheme - Flexi Cap Fund",
+      "returns": {
+        "1y": 14.91,
+        "3y": 64.67,
+        "5y": 92.38
+      },
+      "volatility": 0.8216,
+      "max_drawdown": 49.9,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 105989,
+      "name": "DSP Small Cap Fund - Regular - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Equity Scheme - Small Cap Fund",
+      "returns": {
+        "1y": 20.51,
+        "3y": 78.32,
+        "5y": 152.23
+      },
+      "volatility": 1.0916,
+      "max_drawdown": 54.2,
+      "sector": "Small Cap"
+    },
+    {
+      "scheme_code": 106096,
+      "name": "SBI INFRASTRUCTURE FUND -  REGULAR PLAN - GROWTH",
+      "fund_house": "SBI Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 14.11,
+        "3y": 82.41,
+        "5y": 155.13
+      },
+      "volatility": 0.864,
+      "max_drawdown": 59.5,
+      "sector": "Infrastructure"
+    },
+    {
+      "scheme_code": 106144,
+      "name": "Invesco India Large & Mid Cap Fund - Regular Plan - Growth",
+      "fund_house": "Invesco Mutual Fund",
+      "category": "Equity Scheme - Large & Mid Cap Fund",
+      "returns": {
+        "1y": 20.11,
+        "3y": 96.49,
+        "5y": 126.67
+      },
+      "volatility": 1.0478,
+      "max_drawdown": 57.69,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 106166,
+      "name": "CANARA ROBECO EQUITY HYBRID FUND - REGULAR PLAN - GROWTH OPTION",
+      "fund_house": "Canara Robeco Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 14.39,
+        "3y": 51.06,
+        "5y": 76.84
+      },
+      "volatility": 0.6092,
+      "max_drawdown": 41.21,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 106370,
+      "name": "Sundaram Global Brand Theme-Equity Active FOF - Regular Growth",
+      "fund_house": "Sundaram Mutual Fund",
+      "category": "Other Scheme - FoF Overseas",
+      "returns": {
+        "1y": 18.38,
+        "3y": 70.13,
+        "5y": 83.95
+      },
+      "volatility": 0.8898,
+      "max_drawdown": 51.72,
+      "sector": "International"
+    },
+    {
+      "scheme_code": 106597,
+      "name": "DSP World Gold Mining Overseas Equity Omni FoF - Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Other Scheme - FoF Overseas",
+      "returns": {
+        "1y": 187.31,
+        "3y": 339.78,
+        "5y": 306.42
+      },
+      "volatility": 2.1514,
+      "max_drawdown": 82.27,
+      "sector": "International"
+    },
+    {
+      "scheme_code": 106654,
+      "name": "Invesco India Infrastructure Fund - Regular Plan - Growth Option",
+      "fund_house": "Invesco Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 16.94,
+        "3y": 89.72,
+        "5y": 164.02
+      },
+      "volatility": 1.1151,
+      "max_drawdown": 61.08,
+      "sector": "Infrastructure"
+    },
+    {
+      "scheme_code": 106871,
+      "name": "LIC MF Large Cap Fund-Regular Plan-Growth",
+      "fund_house": "LIC Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 13.22,
+        "3y": 44.03,
+        "5y": 66.24
+      },
+      "volatility": 0.797,
+      "max_drawdown": 41.29,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 106873,
+      "name": "Aditya Birla Sun Life International Equity Fund - Growth - Regular Plan",
+      "fund_house": "Aditya Birla Sun Life Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 26.79,
+        "3y": 58.87,
+        "5y": 74.41
+      },
+      "volatility": 0.7961,
+      "max_drawdown": 47.73,
+      "sector": "International"
+    },
+    {
+      "scheme_code": 107288,
+      "name": "JM ELSS Tax Saver Fund (Regular) - Growth option",
+      "fund_house": "JM Financial Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 11.24,
+        "3y": 70.31,
+        "5y": 106.3
+      },
+      "volatility": 0.943,
+      "max_drawdown": 54.55,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 107353,
+      "name": "Invesco India Multicap Fund - Regular Plan - Growth Option",
+      "fund_house": "Invesco Mutual Fund",
+      "category": "Equity Scheme - Multi Cap Fund",
+      "returns": {
+        "1y": 7.97,
+        "3y": 61.55,
+        "5y": 97.87
+      },
+      "volatility": 0.9779,
+      "max_drawdown": 53.47,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 107410,
+      "name": "JM Focused Fund (Regular) - Growth Option",
+      "fund_house": "JM Financial Mutual Fund",
+      "category": "Equity Scheme - Focused Fund",
+      "returns": {
+        "1y": 9.78,
+        "3y": 64.22,
+        "5y": 95.26
+      },
+      "volatility": 0.9529,
+      "max_drawdown": 53.21,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 107763,
+      "name": "LIC MF Infrastructure Fund-Regular Plan-Growth",
+      "fund_house": "LIC Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 27.48,
+        "3y": 118.76,
+        "5y": 194.76
+      },
+      "volatility": 1.2835,
+      "max_drawdown": 62.67,
+      "sector": "Infrastructure"
+    },
+    {
+      "scheme_code": 108378,
+      "name": "Invesco India Financial Services Fund - Regular Plan - Growth",
+      "fund_house": "Invesco Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 28.14,
+        "3y": 88.99,
+        "5y": 114.34
+      },
+      "volatility": 0.9362,
+      "max_drawdown": 56.8,
+      "sector": "Banking & Financial Services"
+    },
+    {
+      "scheme_code": 108592,
+      "name": "Bandhan Focused Fund - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Equity Scheme - Focused Fund",
+      "returns": {
+        "1y": 12.42,
+        "3y": 72.46,
+        "5y": 87.01
+      },
+      "volatility": 0.9217,
+      "max_drawdown": 50.1,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 108594,
+      "name": "BANDHAN Flexi Cap Fund - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Equity Scheme - Flexi Cap Fund",
+      "returns": {
+        "1y": 14.27,
+        "3y": 59.98,
+        "5y": 93.11
+      },
+      "volatility": 0.7303,
+      "max_drawdown": 47.01,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 108596,
+      "name": "Bandhan Large & Mid Cap Fund - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Equity Scheme - Large & Mid Cap Fund",
+      "returns": {
+        "1y": 18.95,
+        "3y": 93.05,
+        "5y": 147.04
+      },
+      "volatility": 0.8319,
+      "max_drawdown": 57.8,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 108799,
+      "name": "BANDHAN Large Cap Fund - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 17.2,
+        "3y": 66.75,
+        "5y": 91.97
+      },
+      "volatility": 0.8043,
+      "max_drawdown": 47.94,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 108909,
+      "name": "Bandhan Value Fund - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Equity Scheme - Value Fund",
+      "returns": {
+        "1y": 12.82,
+        "3y": 65.28,
+        "5y": 137.1
+      },
+      "volatility": 0.7452,
+      "max_drawdown": 51.93,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 109059,
+      "name": "Sundaram Financial Services Opportunities Fund Regular Plan - Growth",
+      "fund_house": "Sundaram Mutual Fund",
+      "category": "Equity Scheme - Sectoral/ Thematic",
+      "returns": {
+        "1y": 23.88,
+        "3y": 77.22,
+        "5y": 106.61
+      },
+      "volatility": 0.9003,
+      "max_drawdown": 54.65,
+      "sector": "Banking & Financial Services"
+    },
+    {
+      "scheme_code": 109275,
+      "name": "quant Focused Fund - Growth Option - Regular Plan",
+      "fund_house": "quant Mutual Fund",
+      "category": "Equity Scheme - Focused Fund",
+      "returns": {
+        "1y": 11.3,
+        "3y": 57.83,
+        "5y": 102.21
+      },
+      "volatility": 0.9644,
+      "max_drawdown": 51.05,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 109830,
+      "name": "quant Flexi Cap Fund - Growth Option - Regular Plan",
+      "fund_house": "quant Mutual Fund",
+      "category": "Equity Scheme - Flexi Cap Fund",
+      "returns": {
+        "1y": 13.75,
+        "3y": 67.51,
+        "5y": 152.75
+      },
+      "volatility": 0.9849,
+      "max_drawdown": 55.45,
+      "sector": "Flexi Cap"
+    },
+    {
+      "scheme_code": 110603,
+      "name": "BANK OF INDIA Large & Mid Cap Fund Regular Plan- Growth",
+      "fund_house": "Bank of India Mutual Fund",
+      "category": "Equity Scheme - Large & Mid Cap Fund",
+      "returns": {
+        "1y": 19.9,
+        "3y": 66.29,
+        "5y": 110.49
+      },
+      "volatility": 0.9513,
+      "max_drawdown": 50.17,
+      "sector": "Mid Cap"
+    },
+    {
+      "scheme_code": 111569,
+      "name": "BANDHAN ELSS Tax Saver Fund - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 14.62,
+        "3y": 59.41,
+        "5y": 110.17
+      },
+      "volatility": 0.7306,
+      "max_drawdown": 48.42,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 111638,
+      "name": "Edelweiss ELSS Tax Saver Fund - Regular Plan - Growth Option",
+      "fund_house": "Edelweiss Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 18.33,
+        "3y": 64.38,
+        "5y": 94.35
+      },
+      "volatility": 0.8576,
+      "max_drawdown": 48.03,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 111710,
+      "name": "BANK OF INDIA ELSS Tax Saver -Regular Plan- Growth",
+      "fund_house": "Bank of India Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 17.6,
+        "3y": 67.3,
+        "5y": 110.09
+      },
+      "volatility": 1.0422,
+      "max_drawdown": 53.3,
+      "sector": "Banking & Financial Services"
+    },
+    {
+      "scheme_code": 111712,
+      "name": "BANK OF INDIA Conservative Hybrid Fund-Regular Plan-Growth",
+      "fund_house": "Bank of India Mutual Fund",
+      "category": "Debt Scheme - Medium to Long Duration Fund",
+      "returns": {
+        "1y": 7.55,
+        "3y": 25.18,
+        "5y": 64.95
+      },
+      "volatility": 0.2247,
+      "max_drawdown": 35.33,
+      "sector": "Banking & Financial Services"
+    },
+    {
+      "scheme_code": 111722,
+      "name": "CANARA ROBECO ELSS TAX SAVER - REGULAR PLAN - GROWTH OPTION",
+      "fund_house": "Canara Robeco Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 16.72,
+        "3y": 58.76,
+        "5y": 91.01
+      },
+      "volatility": 0.7879,
+      "max_drawdown": 46.35,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 111940,
+      "name": "Edelweiss Large Cap Fund - Regular Plan - Growth Option",
+      "fund_house": "Edelweiss Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 15.13,
+        "3y": 57.95,
+        "5y": 89.82
+      },
+      "volatility": 0.7415,
+      "max_drawdown": 47.4,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 112108,
+      "name": "Edelweiss Aggressive Hybrid Fund - Regular Plan - Growth Option",
+      "fund_house": "Edelweiss Mutual Fund",
+      "category": "Hybrid Scheme - Aggressive Hybrid Fund",
+      "returns": {
+        "1y": 12.82,
+        "3y": 61.29,
+        "5y": 102.89
+      },
+      "volatility": 0.6131,
+      "max_drawdown": 46.5,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 112126,
+      "name": "DSP Global Clean Energy Overseas Equity Omni FoF - Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Other Scheme - FoF Overseas",
+      "returns": {
+        "1y": 58.09,
+        "3y": 55.67,
+        "5y": 80.82
+      },
+      "volatility": 1.3281,
+      "max_drawdown": 50.28,
+      "sector": "International"
+    },
+    {
+      "scheme_code": 112277,
+      "name": "Axis Large Cap Fund - Regular Plan - Growth",
+      "fund_house": "Axis Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 11.42,
+        "3y": 46.98,
+        "5y": 60.16
+      },
+      "volatility": 0.7206,
+      "max_drawdown": 40.49,
+      "sector": "Large Cap"
+    },
+    {
+      "scheme_code": 112293,
+      "name": "DSP World Mining Overseas Equity Omni FoF - Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Other Scheme - FoF Overseas",
+      "returns": {
+        "1y": 110.84,
+        "3y": 104.73,
+        "5y": 151.39
+      },
+      "volatility": 1.6772,
+      "max_drawdown": 64.41,
+      "sector": "International"
+    },
+    {
+      "scheme_code": 112323,
+      "name": "Axis ELSS Tax Saver Fund - Regular Plan - Growth",
+      "fund_house": "Axis Mutual Fund",
+      "category": "Equity Scheme - ELSS",
+      "returns": {
+        "1y": 13.0,
+        "3y": 57.76,
+        "5y": 61.24
+      },
+      "volatility": 0.7856,
+      "max_drawdown": 43.62,
+      "sector": "ELSS"
+    },
+    {
+      "scheme_code": 112327,
+      "name": "Bandhan Conservative Hybrid Passive FOF - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Other Scheme - FoF Domestic",
+      "returns": {
+        "1y": 9.63,
+        "3y": 32.05,
+        "5y": 43.21
+      },
+      "volatility": 0.1953,
+      "max_drawdown": 28.28,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 112332,
+      "name": "Bandhan Aggressive Hybrid Passive FOF - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Other Scheme - FoF Domestic",
+      "returns": {
+        "1y": 15.87,
+        "3y": 58.19,
+        "5y": 77.63
+      },
+      "volatility": 0.5824,
+      "max_drawdown": 41.7,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 112353,
+      "name": "BANDHAN Conservative Hybrid Fund - Regular Plan - Growth",
+      "fund_house": "Bandhan Mutual Fund",
+      "category": "Hybrid Scheme - Conservative Hybrid Fund",
+      "returns": {
+        "1y": 7.47,
+        "3y": 26.8,
+        "5y": 33.64
+      },
+      "volatility": 0.2412,
+      "max_drawdown": 25.31,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 112901,
+      "name": "DSP Focused Fund - Regular Plan - Growth",
+      "fund_house": "DSP Mutual Fund",
+      "category": "Equity Scheme - Focused Fund",
+      "returns": {
+        "1y": 14.8,
+        "3y": 71.63,
+        "5y": 93.0
+      },
+      "volatility": 0.8334,
+      "max_drawdown": 50.24,
+      "sector": "Diversified"
+    },
+    {
+      "scheme_code": 112924,
+      "name": "Axis Conservative Hybrid Fund - Regular Plan - Growth Option",
+      "fund_house": "Axis Mutual Fund",
+      "category": "Hybrid Scheme - Conservative Hybrid Fund",
+      "returns": {
+        "1y": 6.87,
+        "3y": 25.03,
+        "5y": 37.56
+      },
+      "volatility": 0.1976,
+      "max_drawdown": 24.35,
+      "sector": "Hybrid"
+    },
+    {
+      "scheme_code": 113221,
+      "name": "CANARA ROBECO LARGE CAP FUND - REGULAR PLAN - GROWTH OPTION",
+      "fund_house": "Canara Robeco Mutual Fund",
+      "category": "Equity Scheme - Large Cap Fund",
+      "returns": {
+        "1y": 12.76,
+        "3y": 56.94,
+        "5y": 83.51
+      },
+      "volatility": 0.7456,
+      "max_drawdown": 45.16,
+      "sector": "Large Cap"
+    }
+  ]
+}

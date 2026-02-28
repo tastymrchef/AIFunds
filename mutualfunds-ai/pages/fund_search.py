@@ -1,6 +1,7 @@
 from utils.fund_data import search_funds, get_fund_data, calculate_returns, get_nifty_data, calculate_nifty_returns
 from utils.ai_utils import chat_with_fund, get_ai_summary, get_fund_manager_and_holdings, build_fund_system_prompt
 from utils.charts import build_comparison_chart
+from utils.clustering import find_similar_funds
 
 import streamlit as st
 import pandas as pd
@@ -63,9 +64,7 @@ if query:
 
             col1, col2, col3, col4 = st.columns(4)
             col1.metric("Current NAV", f"₹{nav_data[0]['nav']}")
-            col2.metric("1 Year Return", f"{returns.get('1 Year', 'N/A')}%")
-            col3.metric("3 Year Return", f"{returns.get('3 Year', 'N/A')}%")
-            col4.metric("5 Year Return", f"{returns.get('5 Year', 'N/A')}%")
+    
 
             st.divider()
             st.subheader("AI Summary")
@@ -115,6 +114,55 @@ if query:
                     "Outperformance (%)": st.column_config.NumberColumn(format="%.2f%%"),
                 }
             )
+
+
+            st.divider()
+            st.subheader("🔍 Similar Funds")
+            st.caption("Funds with similar return profile and risk characteristics")
+
+            target_fund, similar_funds = find_similar_funds(selected_code)
+
+            if not similar_funds:
+                st.info("Not enough funds in this category for similarity analysis yet.")
+            else:
+                cols = st.columns(len(similar_funds))
+                for col, fund in zip(cols, similar_funds):
+                    with col:
+                        return_1y = fund["returns"].get("1y")
+                        return_color = "#00ff88" if return_1y and return_1y > 0 else "#ff4444"
+                        border_color = "#555555" if fund["similarity_score"] < 50 else return_color
+                        similarity_note = "⚠ Limited similarity" if fund["similarity_score"] < 50 else f"Similarity: {fund['similarity_score']}%"
+                        similarity_color = "#888888" if fund["similarity_score"] < 50 else "#4da6ff"
+                                                
+                        st.markdown(f"""
+                        <div style='
+                            background: #1a1a1a;
+                            border-radius: 8px;
+                            padding: 14px;
+                            border-left: 3px solid {border_color};
+                            height: 100%;
+                        '>
+                            <div style='font-size: 11px; color: #888; margin-bottom: 6px;'>{fund["fund_house"]}</div>
+                            <div style='font-size: 13px; color: white; font-weight: bold; margin-bottom: 10px;'>{fund["name"][:50]}...</div>
+                            <div style='display: flex; justify-content: space-between; margin-bottom: 4px;'>
+                                <span style='color: #888; font-size: 12px;'>1Y Return</span>
+                                <span style='color: {return_color}; font-size: 13px; font-weight: bold;'>{return_1y}%</span>
+                            </div>
+                            <div style='display: flex; justify-content: space-between; margin-bottom: 4px;'>
+                                <span style='color: #888; font-size: 12px;'>Volatility</span>
+                                <span style='color: white; font-size: 12px;'>{fund["volatility"]}%</span>
+                            </div>
+                            <div style='display: flex; justify-content: space-between; margin-bottom: 8px;'>
+                                <span style='color: #888; font-size: 12px;'>Max Drawdown</span>
+                                <span style='color: #ff9944; font-size: 12px;'>{fund["max_drawdown"]}%</span>
+                            </div>
+                            <div style='text-align: center; background: #2a2a2a; border-radius: 4px; padding: 4px;'>
+                                <span style='color: {similarity_color}; font-size: 11px;'>{similarity_note}</span>
+                            </div>
+                        </div>
+                        """, unsafe_allow_html=True)
+
+
 
             st.divider()
             st.subheader("Fund Manager")
