@@ -2,6 +2,7 @@ from utils.fund_data import search_funds, get_fund_data, calculate_returns, get_
 from utils.ai_utils import chat_with_fund, get_ai_summary, get_fund_manager_and_holdings, build_fund_system_prompt
 from utils.charts import build_comparison_chart
 from utils.clustering import find_similar_funds
+from utils.fund_report_agent import get_fund_report
 
 import streamlit as st
 import pandas as pd
@@ -167,13 +168,25 @@ if query:
             st.divider()
             st.subheader("Fund Manager")
 
-            with st.spinner("Researching fund manager and research holdings..."):
-                manager_info = get_fund_manager_and_holdings(
-                    meta["fund_house"],
-                    meta["scheme_name"]
+            with st.spinner("Fetching fund factsheet..."):
+                report = get_fund_report(
+                    scheme_code=selected_code,
+                    fund_house=meta["fund_house"],
+                    scheme_name=meta["scheme_name"]
                 )
-                st.session_state.manager_info = manager_info
-                st.write(manager_info)
+                
+                if report:
+                    st.session_state.manager_info = report
+                    st.subheader("📄 Fund Report")
+                    st.text(report)
+                else:
+                    # Fall back to web search if report agent fails
+                    manager_info = get_fund_manager_and_holdings(
+                        meta["fund_house"],
+                        meta["scheme_name"]
+                    )
+                    st.session_state.manager_info = manager_info
+                    st.write(manager_info)
 
             st.divider()
             st.subheader("💬 Ask Anything About This Fund")
