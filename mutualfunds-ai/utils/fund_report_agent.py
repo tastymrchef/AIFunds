@@ -244,7 +244,7 @@ def extract_structured_data(fund_text, scheme_name):
                 "content": f"""Extract the following from this mutual fund factsheet for {scheme_name}.
 The factsheet may contain multiple funds — focus ONLY on {scheme_name}.
 
-1. Top holdings with percentage allocation
+1. Top 5 holdings with percentage allocation (not 10)
 2. Sector allocation with percentages
 3. Fund manager names and experience
 4. AUM and expense ratio

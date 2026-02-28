@@ -10,6 +10,7 @@ import requests
 import openai
 import os
 from dotenv import load_dotenv
+from datetime import datetime, timedelta
 
 load_dotenv()  # ensure .env exists in the project root
 
@@ -88,7 +89,12 @@ if query:
             st.divider()
             st.subheader("Returns Comparison")
 
-            nifty_returns = calculate_nifty_returns(nifty_df)
+
+            nifty_full_start = datetime.today() - timedelta(days=3650)  # 10 years
+            nifty_full_df = get_nifty_data(nifty_full_start, datetime.today())
+            nifty_full_df.columns = ["date", "value"]
+            nifty_returns = calculate_nifty_returns(nifty_full_df)
+            
 
             comparison_data = {
                 "Period": ["1 Year", "3 Year", "5 Year", "10 Year"],
