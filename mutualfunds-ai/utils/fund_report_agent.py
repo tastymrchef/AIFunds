@@ -18,9 +18,6 @@ sarvam_client = SarvamAI(api_subscription_key=os.getenv("SARVAM_API_KEY"))
 CACHE_DIR = "cache/factsheets"
 QUALITY_THRESHOLD = 70
 
-AMC_FACTSHEET_URLS = {
-    "ppfas": "https://amc.ppfas.com/downloads/factsheet/2026/ppfas-mf-factsheet-for-January-2026.pdf",
-}
 
 # ── CACHE ──────────────────────────────────────────────────────────────────
 
@@ -35,22 +32,30 @@ def is_cache_valid(cache_path):
         with open(cache_path, "r") as f:
             cache = json.load(f)
         cached_date = datetime.strptime(cache["cached_at"], "%Y-%m-%d")
-        return (datetime.today() - cached_date).days < 30
+        if (datetime.today() - cached_date).days >= 30:
+            return False
+        # Reject cache if data contains placeholder text
+        data = cache.get("data", "")
+        if "[Company" in data or "[Percentage]" in data or "[Fund Manager" in data:
+            print("Cache contains placeholder data — invalidating")
+            return False
+        return True
     except Exception:
         return False
 
-def save_to_cache(scheme_code, scheme_name, factsheet_url, 
-                  fund_page, structured_data, engine, quality_score, reasoning):
+def save_to_cache(scheme_code, scheme_name, factsheet_url, factsheet_month,
+    fund_page, structured_data, engine,quality_score, quality_reasoning):
     cache = {
-        "cached_at": datetime.today().strftime("%Y-%m-%d"),
-        "scheme_code": scheme_code,
-        "scheme_name": scheme_name,
-        "factsheet_url": factsheet_url,
-        "fund_page": fund_page,
-        "extraction_engine": engine,
-        "quality_score": quality_score,
-        "quality_reasoning": reasoning,
-        "data": structured_data
+    "cached_at": datetime.today().strftime("%Y-%m-%d"),
+    "scheme_code": scheme_code,
+    "scheme_name": scheme_name,
+    "factsheet_url": factsheet_url,
+    "factsheet_month": factsheet_month,
+    "fund_page": fund_page,
+    "extraction_engine": engine,
+    "quality_score": quality_score,
+    "quality_reasoning": quality_reasoning,
+    "data": structured_data
     }
     with open(get_cache_path(scheme_code), "w") as f:
         json.dump(cache, f, indent=2)
@@ -58,40 +63,69 @@ def save_to_cache(scheme_code, scheme_name, factsheet_url,
 
 # ── STEP 1: FIND FACTSHEET URL ─────────────────────────────────────────────
 
+def find_individual_url(fund_house):
+    try:
+        response = openai_client.chat.completions.create(
+            model="gpt-4o-search-preview",
+            web_search_options={},
+            messages=[{
+                "role": "user",
+                "content": f"Find the direct PDF download URL for the latest monthly factsheet of {fund_house} India. Return only the direct PDF URL ending in .pdf, nothing else."
+            }]
+        )
+        content = response.choices[0].message.content.strip()
+        urls = re.findall(r'https?://[^\s]+\.pdf', content)
+        if urls:
+            return {"url": urls[0], "month": "Recent"}
+        return None
+    except Exception as e:
+        print(f"Web search error: {e}")
+        return None
+
+
+
 def find_factsheet_url(fund_house, scheme_name):
-    # Check known URLs first
-    for key, url in AMC_FACTSHEET_URLS.items():
-        if key.lower() in fund_house.lower():
-            print(f"Using known URL for {key}")
-            return url
+    # Load cache
+    try:
+        with open("cache/amc_factsheet_urls.json", "r") as f:
+            amc_urls = json.load(f)
+    except Exception:
+        amc_urls = {}
+    
+    # Match fund house to AMC name in cache
+    fund_house_lower = fund_house.lower()
+    for amc_name, data in amc_urls.items():
+        amc_lower = amc_name.lower()
+        # Check if any significant word from cache AMC name appears in fund house
+        words = [w for w in amc_lower.split() 
+                 if len(w) > 3 
+                 and w not in ["mutual", "fund", "asset", "india", "management"]]
+        if any(w in fund_house_lower for w in words):
+            url = data["url"] if isinstance(data, dict) else data
+            month = data.get("month", "Recent") if isinstance(data, dict) else "Recent"
+            print(f"Found cached URL for {amc_name} — {month}")
+            return url, month
     
     # Fall back to web search
-    print("Searching for factsheet URL...")
-    response = openai_client.chat.completions.create(
-        model="gpt-4o-search-preview",
-        web_search_options={},
-        messages=[{
-            "role": "user",
-            "content": f"Find the direct PDF download URL for the latest monthly factsheet of {scheme_name} from {fund_house} India. Return only the URL."
-        }]
-    )
-    content = response.choices[0].message.content.strip()
-    urls = re.findall(r'https?://[^\s]+\.pdf', content)
-    return urls[0] if urls else None
+    print(f"Not in cache — searching for {fund_house}...")
+    result = find_individual_url(fund_house)
+    if result:
+        return result["url"], result["month"]
+    return None, None
 
 # ── STEP 2: DOWNLOAD PDF ───────────────────────────────────────────────────
 
 def download_pdf(url):
     try:
-        print(f"Downloading PDF from {url}...")
-        response = requests.get(url, timeout=30)
+        response = requests.get(url, timeout=30, allow_redirects=True,
+            verify=False,  # handles SSL cert issues
+            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+        )
         if response.status_code != 200:
-            print(f"Download failed with status {response.status_code}")
             return None
         tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf")
         tmp.write(response.content)
         tmp.close()
-        print("PDF downloaded successfully")
         return tmp.name
     except Exception as e:
         print(f"Download error: {e}")
@@ -283,12 +317,12 @@ def get_fund_report(scheme_code, fund_house, scheme_name):
     print("=" * 60)
     
     # Step 1 — Find URL
-    factsheet_url = find_factsheet_url(fund_house, scheme_name)
+    factsheet_url, factsheet_month = find_factsheet_url(fund_house, scheme_name)
     if not factsheet_url:
         print("Could not find factsheet URL")
         return None
     
-    # Step 2 — Download PDF
+    # Step 2 — Download PDF``
     pdf_path = download_pdf(factsheet_url)
     if not pdf_path:
         return None
@@ -334,10 +368,10 @@ def get_fund_report(scheme_code, fund_house, scheme_name):
     
     # Save to cache
     save_to_cache(
-        scheme_code, scheme_name, factsheet_url,
-        fund_page, structured_data, engine,
-        quality_score, quality_reasoning
+        scheme_code, scheme_name, factsheet_url, factsheet_month,
+        fund_page, structured_data, engine, quality_score, quality_reasoning
     )
+
     
     return structured_data
 

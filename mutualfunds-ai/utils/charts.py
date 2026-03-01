@@ -23,6 +23,16 @@ def build_comparison_chart(nav_data, fund_name, period="Max"):
     if days:
         cutoff = datetime.today() - timedelta(days=days)
         df = df[df["date"] >= cutoff]
+    # If there's no NAV data after filtering, return an empty figure
+    if df.empty:
+        fig = go.Figure()
+        fig.update_layout(
+            paper_bgcolor="#0a0a0a",
+            plot_bgcolor="#0a0a0a",
+            font=dict(color="white"),
+            title="No NAV data available for the selected fund / period"
+        )
+        return fig, pd.DataFrame()
 
     start_date = df["date"].min()
     end_date = df["date"].max()
@@ -35,8 +45,15 @@ def build_comparison_chart(nav_data, fund_name, period="Max"):
     nifty_df = get_nifty_data(start_date, end_date)
     nifty_df.columns = ["date", "nifty_close"]
     nifty_df["date"] = pd.to_datetime(nifty_df["date"])
-    nifty_start = nifty_df["nifty_close"].iloc[0]
-    nifty_df["nifty_normalized"] = (nifty_df["nifty_close"] / nifty_start) * 100
+    # Guard against empty Nifty data
+    if nifty_df.empty:
+        nifty_df = pd.DataFrame(columns=["date", "nifty_close", "nifty_normalized"])
+    else:
+        nifty_start = float(nifty_df["nifty_close"].iloc[0])
+        if nifty_start == 0:
+            nifty_df["nifty_normalized"] = None
+        else:
+            nifty_df["nifty_normalized"] = (nifty_df["nifty_close"] / nifty_start) * 100
 
     # Build chart — rest stays exactly the same
     fig = go.Figure()

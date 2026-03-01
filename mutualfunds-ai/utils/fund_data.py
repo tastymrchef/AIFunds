@@ -57,20 +57,47 @@ def get_nifty_data(start_date, end_date):
     nifty.columns = ["date", "nifty_close"]
     return nifty
 
-
 def calculate_nifty_returns(nifty_df):
-    def get_nifty_return(days):
+    nifty_df["date"] = pd.to_datetime(nifty_df["date"])
+    
+    # Get current value
+    if "nifty_close" in nifty_df.columns:
+        current_value = float(nifty_df.iloc[-1]["nifty_close"])
+    elif "value" in nifty_df.columns:
+        current_value = float(nifty_df.iloc[-1]["value"])
+    else:
+        return {}
+
+    def get_nifty_return(days, years):
         target = datetime.today() - timedelta(days=days)
-        nifty_df["date"] = pd.to_datetime(nifty_df["date"])
         filtered = nifty_df[nifty_df["date"] <= target]
         if filtered.empty:
             return None
-        old_value = filtered.iloc[-1]["nifty_close"]
-        current_value = nifty_df.iloc[-1]["nifty_close"]
-        return round(((current_value - old_value) / old_value) * 100, 2)
-    print(nifty_df.columns)
-    print(nifty_df.head())
+        
+        if "nifty_close" in filtered.columns:
+            old_value = float(filtered.iloc[-1]["nifty_close"])
+        elif "value" in filtered.columns:
+            old_value = float(filtered.iloc[-1]["value"])
+        else:
+            return None
+        
+        if old_value == 0:
+            return None
+        
+        if years == 1:
+            # Absolute return for 1Y
+            return round(((current_value - old_value) / old_value) * 100, 2)
+        else:
+            # CAGR for 3Y, 5Y, 10Y
+            return round(((current_value / old_value) ** (1/years) - 1) * 100, 2)
+
     returns = {}
-    for label, days in [("1 Year", 365), ("3 Year", 1095), ("5 Year", 1825), ("10 Year", 3650)]:
-        returns[label] = get_nifty_return(days)
+    for label, days, years in [
+        ("1 Year", 365, 1),
+        ("3 Year", 1095, 3),
+        ("5 Year", 1825, 5),
+        ("10 Year", 3650, 10)
+    ]:
+        returns[label] = get_nifty_return(days, years)
+    
     return returns

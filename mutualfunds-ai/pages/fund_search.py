@@ -89,15 +89,13 @@ if query:
             st.divider()
             st.subheader("Returns Comparison")
 
-
-            nifty_full_start = datetime.today() - timedelta(days=3650)  # 10 years
+            nifty_full_start = datetime.today() - timedelta(days=3650)
             nifty_full_df = get_nifty_data(nifty_full_start, datetime.today())
             nifty_full_df.columns = ["date", "value"]
             nifty_returns = calculate_nifty_returns(nifty_full_df)
-            
 
             comparison_data = {
-                "Period": ["1 Year", "3 Year", "5 Year", "10 Year"],
+                "Period": ["1 Year", "3 Year (CAGR)", "5 Year (CAGR)", "10 Year (CAGR)"],
                 "Fund Return (%)": [returns.get(p) for p in ["1 Year", "3 Year", "5 Year", "10 Year"]],
                 "Nifty 50 (%)": [nifty_returns.get(p) for p in ["1 Year", "3 Year", "5 Year", "10 Year"]],
             }
@@ -109,8 +107,6 @@ if query:
                 comparison_df["Fund Return (%)"] - comparison_df["Nifty 50 (%)"]
             ).round(2)
 
-            
-
             st.dataframe(
                 comparison_df,
                 use_container_width=True,
@@ -121,6 +117,7 @@ if query:
                     "Outperformance (%)": st.column_config.NumberColumn(format="%.2f%%"),
                 }
             )
+            st.caption("1 Year return is absolute. 3Y, 5Y, 10Y are CAGR (annualized returns).")
 
 
             st.divider()
