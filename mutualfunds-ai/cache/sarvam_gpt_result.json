@@ -1,0 +1,273 @@
+{
+  "category": "Large & Mid Cap Fund",
+  "aum": "27,544.45 Cr",
+  "expense_ratio": "1.62%",
+  "fund_manager": "Ihab Dalwai",
+  "holdings": [
+    {
+      "stock": "HDB Financial Services Ltd.",
+      "weight": "0.83%",
+      "sector": null
+    },
+    {
+      "stock": "LIC Housing Finance Ltd.",
+      "weight": "0.59%",
+      "sector": null
+    },
+    {
+      "stock": "Adani Wilmar Ltd",
+      "weight": "0.72%",
+      "sector": null
+    },
+    {
+      "stock": "Nestle India Ltd.",
+      "weight": "0.75%",
+      "sector": null
+    },
+    {
+      "stock": "Tata Motors Ltd. - Futures",
+      "weight": "1.47%",
+      "sector": null
+    },
+    {
+      "stock": "Gujarat Gas Ltd.",
+      "weight": "0.92%",
+      "sector": null
+    },
+    {
+      "stock": "Sona Blw Precision Forgings Ltd.",
+      "weight": "2.94%",
+      "sector": null
+    },
+    {
+      "stock": "Motherson Sumi Wiring India Ltd.",
+      "weight": "1.82%",
+      "sector": null
+    },
+    {
+      "stock": "Rainbow Childrens Medicare Ltd",
+      "weight": "0.81%",
+      "sector": null
+    },
+    {
+      "stock": "Bharat Forge Ltd.",
+      "weight": "1.66%",
+      "sector": null
+    },
+    {
+      "stock": "Balkrishna Industries Ltd.",
+      "weight": "1.02%",
+      "sector": null
+    },
+    {
+      "stock": "AIA Engineering Ltd.",
+      "weight": "1.67%",
+      "sector": null
+    },
+    {
+      "stock": "Supreme Industries Ltd.",
+      "weight": "0.90%",
+      "sector": null
+    },
+    {
+      "stock": "Maruti Suzuki India Ltd.",
+      "weight": "2.84%",
+      "sector": null
+    },
+    {
+      "stock": "Bajaj Auto Ltd.",
+      "weight": "0.96%",
+      "sector": null
+    },
+    {
+      "stock": "ICICI Prudential Life Insurance",
+      "weight": null,
+      "sector": null
+    },
+    {
+      "stock": "Tata Motors Passenger Vehicles Ltd.",
+      "weight": "0.87%",
+      "sector": null
+    },
+    {
+      "stock": "Star Health & Allied Insurance",
+      "weight": "0.72%",
+      "sector": null
+    },
+    {
+      "stock": "Axis Bank Ltd.",
+      "weight": "4.64%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "ICICI Bank Ltd.",
+      "weight": "3.11%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "IndusInd Bank Ltd.",
+      "weight": "2.94%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "HDFC Bank Ltd.",
+      "weight": "2.37%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "Kotak Mahindra Bank Ltd.",
+      "weight": "0.66%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "Jubilant Foodworks Ltd.",
+      "weight": "1.28%",
+      "sector": null
+    },
+    {
+      "stock": "United Breweries Ltd.",
+      "weight": "2.01%",
+      "sector": null
+    },
+    {
+      "stock": "Indian Railway Catering and Tourism Corporation Ltd.",
+      "weight": "1.01%",
+      "sector": null
+    },
+    {
+      "stock": "Shree Cements Ltd.",
+      "weight": "1.68%",
+      "sector": null
+    },
+    {
+      "stock": "Oil India Ltd.",
+      "weight": "0.85%",
+      "sector": null
+    },
+    {
+      "stock": "Larsen & Toubro Ltd.",
+      "weight": "1.95%",
+      "sector": null
+    },
+    {
+      "stock": "Reliance Industries Ltd.",
+      "weight": "1.86%",
+      "sector": null
+    },
+    {
+      "stock": "Kalpataru Projects International Ltd",
+      "weight": "0.57%",
+      "sector": null
+    },
+    {
+      "stock": "Alkem Laboratories Ltd.",
+      "weight": "2.00%",
+      "sector": null
+    },
+    {
+      "stock": "V-Guard Industries Ltd.",
+      "weight": "0.79%",
+      "sector": null
+    },
+    {
+      "stock": "Sun Pharmaceutical Industries Ltd.",
+      "weight": "1.14%",
+      "sector": null
+    },
+    {
+      "stock": "LG Electronics Inc",
+      "weight": "0.56%",
+      "sector": null
+    },
+    {
+      "stock": "NTPC Ltd.",
+      "weight": "1.06%",
+      "sector": null
+    },
+    {
+      "stock": "ITC Ltd.",
+      "weight": "1.23%",
+      "sector": null
+    },
+    {
+      "stock": "Hindustan Unilever Ltd.",
+      "weight": "0.74%",
+      "sector": null
+    },
+    {
+      "stock": "Vedanta Ltd.",
+      "weight": "1.34%",
+      "sector": null
+    },
+    {
+      "stock": "FSN E-Commerce Ventures Ltd.",
+      "weight": "3.16%",
+      "sector": null
+    },
+    {
+      "stock": "Avenue Supermarts Ltd.",
+      "weight": "2.26%",
+      "sector": null
+    },
+    {
+      "stock": "Sun TV Network Ltd.",
+      "weight": "0.75%",
+      "sector": null
+    },
+    {
+      "stock": "Swiggy Ltd",
+      "weight": "1.59%",
+      "sector": null
+    },
+    {
+      "stock": "PI Industries Ltd.",
+      "weight": "1.68%",
+      "sector": null
+    },
+    {
+      "stock": "Page Industries Ltd.",
+      "weight": "3.30%",
+      "sector": null
+    },
+    {
+      "stock": "SBI Cards & Payment Services Ltd.",
+      "weight": "4.02%",
+      "sector": null
+    },
+    {
+      "stock": "Bajaj Finserv Ltd.",
+      "weight": "2.78%",
+      "sector": null
+    },
+    {
+      "stock": "Interglobe Aviation Ltd.",
+      "weight": "2.93%",
+      "sector": null
+    },
+    {
+      "stock": "Container Corporation Of India Ltd.",
+      "weight": "0.62%",
+      "sector": null
+    },
+    {
+      "stock": "91 Days Treasury Bill 2026",
+      "weight": "0.36%",
+      "sector": null
+    },
+    {
+      "stock": "364 Days Treasury Bill 2026",
+      "weight": "0.20%",
+      "sector": null
+    },
+    {
+      "stock": "182 Days Treasury Bill 2026",
+      "weight": "0.05%",
+      "sector": null
+    },
+    {
+      "stock": "TVS Motor Company Ltd.",
+      "weight": "0.01%",
+      "sector": null
+    }
+  ]
+}

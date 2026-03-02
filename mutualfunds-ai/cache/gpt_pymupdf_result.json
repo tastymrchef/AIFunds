@@ -1,0 +1,273 @@
+{
+  "category": "Large & Mid Cap",
+  "aum": "27,544.45 Cr",
+  "expense_ratio": "1.62%",
+  "fund_manager": "Ihab Dalwai",
+  "holdings": [
+    {
+      "stock": "Adani Wilmar Ltd",
+      "weight": "0.72%",
+      "sector": null
+    },
+    {
+      "stock": "Tata Motors Ltd. - Futures",
+      "weight": "1.47%",
+      "sector": null
+    },
+    {
+      "stock": "Sona Blw Precision Forgings Ltd.",
+      "weight": "2.94%",
+      "sector": "Auto Components"
+    },
+    {
+      "stock": "Motherson Sumi Wiring India Ltd.",
+      "weight": "1.82%",
+      "sector": "Auto Components"
+    },
+    {
+      "stock": "Bharat Forge Ltd.",
+      "weight": "1.66%",
+      "sector": "Auto Components"
+    },
+    {
+      "stock": "Balkrishna Industries Ltd.",
+      "weight": "1.02%",
+      "sector": "Auto Components"
+    },
+    {
+      "stock": "Maruti Suzuki India Ltd.",
+      "weight": "2.84%",
+      "sector": "Automobiles"
+    },
+    {
+      "stock": "Bajaj Auto Ltd.",
+      "weight": "0.96%",
+      "sector": "Automobiles"
+    },
+    {
+      "stock": "Tata Motors Passenger Vehicles Ltd.",
+      "weight": "0.87%",
+      "sector": "Automobiles"
+    },
+    {
+      "stock": "Axis Bank Ltd.",
+      "weight": "4.64%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "ICICI Bank Ltd.",
+      "weight": "3.11%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "IndusInd Bank Ltd.",
+      "weight": "2.94%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "HDFC Bank Ltd.",
+      "weight": "2.37%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "Kotak Mahindra Bank Ltd.",
+      "weight": "0.66%",
+      "sector": "Banks"
+    },
+    {
+      "stock": "United Breweries Ltd.",
+      "weight": "2.01%",
+      "sector": "Beverages"
+    },
+    {
+      "stock": "Shree Cements Ltd.",
+      "weight": "1.68%",
+      "sector": "Cement & Cement Products"
+    },
+    {
+      "stock": "Larsen & Toubro Ltd.",
+      "weight": "1.95%",
+      "sector": "Construction"
+    },
+    {
+      "stock": "Kalpataru Projects International Ltd",
+      "weight": "0.57%",
+      "sector": "Construction"
+    },
+    {
+      "stock": "V-Guard Industries Ltd.",
+      "weight": "0.79%",
+      "sector": "Consumer Durables"
+    },
+    {
+      "stock": "LG Electronics Inc",
+      "weight": "0.56%",
+      "sector": "Consumer Durables"
+    },
+    {
+      "stock": "ITC Ltd.",
+      "weight": "1.23%",
+      "sector": "Diversified Fmcg"
+    },
+    {
+      "stock": "Hindustan Unilever Ltd.",
+      "weight": "0.74%",
+      "sector": "Diversified Fmcg"
+    },
+    {
+      "stock": "Vedanta Ltd.",
+      "weight": "1.34%",
+      "sector": "Diversified Metals"
+    },
+    {
+      "stock": "Sun TV Network Ltd.",
+      "weight": "0.75%",
+      "sector": "Entertainment"
+    },
+    {
+      "stock": "PI Industries Ltd.",
+      "weight": "1.68%",
+      "sector": "Fertilizers & Agrochemicals"
+    },
+    {
+      "stock": "SBI Cards & Payment Services Ltd.",
+      "weight": "4.02%",
+      "sector": "Finance"
+    },
+    {
+      "stock": "Bajaj Finserv Ltd.",
+      "weight": "2.78%",
+      "sector": "Finance"
+    },
+    {
+      "stock": "HDB Financial Services Ltd.",
+      "weight": "0.83%",
+      "sector": "Finance"
+    },
+    {
+      "stock": "LIC Housing Finance Ltd.",
+      "weight": "0.59%",
+      "sector": "Finance"
+    },
+    {
+      "stock": "Nestle India Ltd.",
+      "weight": "0.75%",
+      "sector": "Food Products"
+    },
+    {
+      "stock": "Gujarat Gas Ltd.",
+      "weight": "0.92%",
+      "sector": "Gas"
+    },
+    {
+      "stock": "Rainbow Childrens Medicare Ltd",
+      "weight": "0.81%",
+      "sector": "Healthcare Services"
+    },
+    {
+      "stock": "AIA Engineering Ltd.",
+      "weight": "1.67%",
+      "sector": "Industrial Products"
+    },
+    {
+      "stock": "Supreme Industries Ltd.",
+      "weight": "0.90%",
+      "sector": "Industrial Products"
+    },
+    {
+      "stock": "ICICI Prudential Life Insurance Company Ltd.",
+      "weight": "1.67%",
+      "sector": "Insurance"
+    },
+    {
+      "stock": "Star Health & Allied Insurance",
+      "weight": "0.72%",
+      "sector": "Insurance"
+    },
+    {
+      "stock": "Infosys Ltd.",
+      "weight": "2.13%",
+      "sector": "IT"
+    },
+    {
+      "stock": "Tata Consultancy Services Ltd.",
+      "weight": "1.32%",
+      "sector": "IT"
+    },
+    {
+      "stock": "Rategain Travel Technologies Ltd.",
+      "weight": "0.56%",
+      "sector": "IT"
+    },
+    {
+      "stock": "Jubilant Foodworks Ltd.",
+      "weight": "1.28%",
+      "sector": "Leisure Services"
+    },
+    {
+      "stock": "Indian Railway Catering and Tourism Corporation Ltd.",
+      "weight": "1.01%",
+      "sector": "Leisure Services"
+    },
+    {
+      "stock": "Oil India Ltd.",
+      "weight": "0.85%",
+      "sector": "Oil"
+    },
+    {
+      "stock": "Reliance Industries Ltd.",
+      "weight": "1.86%",
+      "sector": "Petroleum Products"
+    },
+    {
+      "stock": "Alkem Laboratories Ltd.",
+      "weight": "2.00%",
+      "sector": "Pharmaceuticals & Biotechnology"
+    },
+    {
+      "stock": "Sun Pharmaceutical Industries Ltd.",
+      "weight": "1.14%",
+      "sector": "Pharmaceuticals & Biotechnology"
+    },
+    {
+      "stock": "NTPC Ltd.",
+      "weight": "1.06%",
+      "sector": "Power"
+    },
+    {
+      "stock": "Oberoi Realty Ltd.",
+      "weight": "1.70%",
+      "sector": "Realty"
+    },
+    {
+      "stock": "FSN E-Commerce Ventures Ltd.",
+      "weight": "3.16%",
+      "sector": "Retailing"
+    },
+    {
+      "stock": "Avenue Supermarts Ltd.",
+      "weight": "2.26%",
+      "sector": "Retailing"
+    },
+    {
+      "stock": "Swiggy Ltd",
+      "weight": "1.59%",
+      "sector": "Retailing"
+    },
+    {
+      "stock": "Info Edge (India) Ltd.",
+      "weight": "1.01%",
+      "sector": "Retailing"
+    },
+    {
+      "stock": "Page Industries Ltd.",
+      "weight": "3.30%",
+      "sector": "Textiles & Apparels"
+    },
+    {
+      "stock": "Interglobe Aviation Ltd.",
+      "weight": "2.93%",
+      "sector": "Transport Services"
+    }
+  ]
+}
