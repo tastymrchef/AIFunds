@@ -1,50 +1,234 @@
 {
-    "360 ONE Mutual Fund": {"url": "https://archive.iiflmf.com/sites/mf/files/2026-01/360ONE-MF-January%202026%20-%20Regular.pdf", "month": "January 2026"},
-    "Aditya Birla Sun Life Mutual Fund": {"url": "https://mutualfund.adityabirlacapital.com/-/media/bsl/files/resources/factsheets/2026/abslmf-empower_jan26.pdf?", "month": "January 2026"},
-    "Angel One Mutual Fund": {"url": "https://cms.angelonemf.com/amc-cms/wp-content/uploads/formidable/15/Factsheet-Angel-One-Mutual-Fund-Schemes-Jan-2026.pdf", "month": "January 2026"},
-    "Axis Mutual Fund": {"url": "https://www.axismf.com/cms/sites/default/files/pdf-factsheets/Axis%20Fund%20Factsheet%20January%202026..pdf", "month": "January 2026"},
-    "Bajaj Finserv Mutual Fund": {"url": "https://www.bajajamc.com/sites/default/files/2026-01/bajaj_finserv_factsheet_january_2026.pdf", "month": "January 2026"},
-    "Bandhan Mutual Fund": {"url": "https://storage.googleapis.com/nonprod-static-assets-121to59kaawfgfi7bol/2026/02/d38e9f1b-bandhan-factsheet-january-2026.pdf", "month": "January 2026"},
-    "Bank of India Mutual Fund": {"url": "https://www.boimf.in/docs/default-source/investorcorner/factsheets/factsheet-january-2026.pdf?", "month": "January 2026"},
-    "Baroda BNP Paribas Mutual Fund": {"url": "https://www.barodabnpparibasmf.in/assets/download_documents/Factsheet-January_2026_16627.pdf", "month": "January 2026"},
-    "Canara Robeco Mutual Fund": {"url": "https://www.canararobeco.com/wp-content/uploads/2026/02/Canara-Robeco-factsheet-as-on-January-2026-1.pdf", "month": "January 2026"},
-    "Capitalmind Mutual Fund": {"url": "https://capitalmindmf.com/uploads/Capitalmind_Factsheet_10_Jan2026_600f395ecc.pdf", "month": "January 2026"},
-    "Choice Mutual Fund": {"url": "https://choicemf.com/factsheet/fund-fact-sheet-jan-2026.PDF", "month": "January 2026"},
-    "DSP Mutual Fund": {"url": "https://www.dspim.com/media/pages/downloads/9d308f0a79-1771220180/dsp-factsheet-january-2026.pdf", "month": "January 2026"},
-    "Edelweiss Mutual Fund": {"url": "https://www.edelweissmf.com/Files/downloads/FACTSHEETS/FACTSHEETS/2026/Jan/Published/Edelweiss%20Factsheet%20January%202026_17022026_055059_PM.pdf", "month": "January 2026"},
-    "Franklin Templeton Mutual Fund": {"url": "https://www.franklintempletonindia.com/download/en-in/fund-factsheets/39ddf684-7204-473e-a97b-d43dfc81fc33/Factsheet-as-on-January-30-2026_web.pdf", "month": "January 2026"},
-    "Groww Mutual Fund": {"url": "https://assets-netstorage.growwmf.in/compliance_docs/Downloads/Fact%20Sheet/2025%20-%202026/Monthly%20Factsheet%20-%20Jan%2026.pdf?", "month": "January 2026"},
-    "HDFC Mutual Fund": {"url": "https://files.hdfcfund.com/s3fs-public/2026-02/HDFC%20MF%20Factsheet%20-%20January%202026_0.pdf?", "month": "January 2026"},
-    "Helios Mutual Fund": {"url": "https://www.heliosmf.in/wp-content/uploads/2026/02/Helios-Factsheet_January-2026.pdf", "month": "January 2026"},
-    "HSBC Mutual Fund": {"url": "https://www.assetmanagement.hsbc.co.in/assets/documents/mutual-funds/en/1b17eb3e-5390-4221-958a-88207f1faca4/the-asset-january-2026.pdf", "month": "January 2026"},
-    "ICICI Prudential Mutual Fund": {"url": "https://digitalfactsheet.icicipruamc.com/fact/pdf/fund-factsheet-for-january-2026.pdf", "month": "January 2026"},
-    "Invesco Mutual Fund": {"url": "https://invescomutualfund.com/docs/default-source/factsheet/invesco-mf-factsheet---january-2026.pdf?", "month": "January 2026"},   
-    "ITI Mutual Fund": {"url": "https://itiamc.com/admin/pdf/1771670722-ITI_FACTSHEET_FEBRUARY_2026.pdf", "month": "January 2026",  "pattern": "C", "note": "January data published in February"},
-    "Jio BlackRock Mutual Fund": {"url": "https://cdnstorage-ddh3hqhvg3gyedd9.a02.azurefd.net/brcms/jioblackro-mkgggldg-436951.pdf", "month": "January 2026", "pattern": "C"},
-    "JM Financial Mutual Fund": {"url": "https://www.jmfinancialmf.com/CMS/downloads/Factsheet/Factsheet/Factsheet%20January%202026.pdf", "month": "January 2026"},
-    "Kotak Mutual Fund": {"url": "https://www.kotakmf.com/Information/forms-and-downloads/Factsheet/Factsheet_for_January_2026/KotakMFFactsheetJanuary2026.pdf", "month": "January 2026"},
-    "LIC Mutual Fund": {"url": "https://www.licmf.com/assets/downloads/monthly_fact_sheet/2025-2026/02/lic-mf-factsheet-31st-January-2025-787913413.pdf", "month": "January 2026"},
-    "Mahindra Manulife Mutual Fund": {"url": "https://www.mahindramanulife.com/uploads/download/6692d134-1a4b-47f2-bf8b-24f8efc49f12.pdf", "month": "January 2026"},
-    "Mirae Asset Mutual Fund": {"url": "https://www.miraeassetmf.co.in/docs/default-source/fachsheet/active-factsheet---january-2026.pdf", "month": "January 2026"},
-    "Motilal Oswal Mutual Fund": {"url": "https://www.motilaloswalmf.com/CMS/assets/uploads/Documents/28c41-most-factsheet-january-2026-active.pdf", "month": "January 2026"},
-    "Navi Mutual Fund": {"url": "https://public-assets.prod.navi-tech.in/navi-website-assests/documents/Active_Fund_Jan_26_20260211200347.pdf", "month": "January 2026"},
-    "Nippon India Mutual Fund": {"url": "https://mf.nipponindiaim.com/InvestorServices/FactSheets/Nippon-FS-Jan-2026.pdf", "month": "January 2026"},
-    "NJ Mutual Fund": {"url": "https://downloads.njmutualfund.com/viewfile.php?file=NJ-MF---Factsheet---January-2026-20260210053915.pdf", "month": "January 2026"},
-    "Old Bridge Mutual Fund": {"url": "https://www.oldbridgemf.com/uploads/Old_Bridge_Mutual_Fund_Factsheet_January_2026_c711f121dc.pdf", "month": "January 2026", "pattern": "C"},
-    "PGIM India Mutual Fund": {"url": "https://www.pgimindia.com/api/v1/brochure/about-us/image/Factsheet%20-%20January%202026.pdf", "month": "January 2026"},
-    "PPFAS Mutual Fund": {"url": "https://amc.ppfas.com/downloads/factsheet/2026/ppfas-mf-factsheet-for-January-2026.pdf", "month": "January 2026"},
-    "quant Mutual Fund": {"url": "https://quantmutual.com/Admin/Factsheet/quant_Factsheet_January_2026.pdf", "month": "January 2026"},
-    "Quantum Mutual Fund": {"url": "https://www.quantumamc.com/FileCDN/FactSheet/54ae1d5a-4bd2-45df-8d18-30ea05ae89fc.pdf", "month": "January 2026", "pattern": "C"},
-    "Samco Mutual Fund": {"url": "https://media1.samco.in/scomamc/amc_documents/Factsheet-January2026_1769959976.pdf", "month": "January 2026", "pattern": "C"},
-    "SBI Mutual Fund": {"url": "https://www.sbimf.com/docs/default-source/scheme-factsheets/all-sbimf-schemes-factsheet-january-2026.pdf?", "month": "January 2026"},
-    "Shriram Mutual Fund": {"url": "https://cdn.shriramamc.in/uploads/fact-sheet/Fact-Sheet/2025-2026/SAMC-Factsheet-(Full)-Jan-2026.pdf", "month": "January 2026"},
-    "Sundaram Mutual Fund": {"url": "https://www.sundarammutual.com/uploaddir/consolidated_factsheet/Consolidated_Factsheet_2_2026_120226_154921.pdf", "month": "January 2026", "pattern": "C"},
-    "Tata Mutual Fund": {"url": "https://www.tatamutualfund.com/system/files/2026-02/TataMF%20Factsheet-January%202026.pdf", "month": "January 2026"},
-    "Taurus Mutual Fund": {"url": "https://www.taurusmutualfund.com/sites/default/files/downloads/Taurus_Times_Jan_2026.pdf", "month": "January 2026"},
-    "Trust Mutual Fund": {"url": "https://www.trustmf.com/trustmfsys/wp-content/uploads/2026/02/TRUSTMF-Factsheet-Jan-2026.pdf", "month": "January 2026"},
-    "Unifi Mutual Fund": {"url": "https://unifimf.com/wp-content/uploads/fund-sheets/Unifi-MF-Factsheet-Jan26.pdf", "month": "January 2026"},
-    "Union Mutual Fund": {"url": "https://www.unionmf.com/docs/default-source/downloads/scheme-disclosures/factsheets/factsheet-january-2026.pdf?", "month": "January 2026"},
-    "UTI Mutual Fund": {"url": "https://d3ce1o48hc5oli.cloudfront.net/s3fs-public/2026-01/uti_fund_watch-january_2026.pdf?", "month": "January 2026"},
-    "WhiteOak Capital Mutual Fund": {"url": "https://content.whiteoakamc.com/Whiteoak_Capital_Factsheet_as_at_Jan_2026_e489e11ce1.pdf", "month": "January 2026", "pattern": "C"},
-    "Zerodha Mutual Fund": {"url": "https://assets.zerodhafundhouse.com/offer-documents/factsheet/Factsheet%20-%20Dec%2025.pdf", "month": "December 2025", "pattern": "A"}
+  "360 ONE Mutual Fund": {
+    "url": "https://archive.iiflmf.com/sites/mf/files/2026-01/360ONE-MF-January%202026%20-%20Regular.pdf",
+    "month": "January 2026"
+  },
+  "Aditya Birla Sun Life Mutual Fund": {
+    "url": "https://mutualfund.adityabirlacapital.com/-/media/bsl/files/resources/factsheets/2026/abslmf-empower_jan26.pdf?",
+    "month": "January 2026"
+  },
+  "Angel One Mutual Fund": {
+    "url": "https://cms.angelonemf.com/amc-cms/wp-content/uploads/formidable/15/Factsheet-Angel-One-Mutual-Fund-Schemes-Jan-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 9
+  },
+  "Axis Mutual Fund": {
+    "url": "https://www.axismf.com/cms/sites/default/files/pdf-factsheets/Axis%20Fund%20Factsheet%20January%202026..pdf",
+    "month": "January 2026",
+    "expected_fund_count": 48
+  },
+  "Bajaj Finserv Mutual Fund": {
+    "url": "https://www.bajajamc.com/sites/default/files/2026-01/bajaj_finserv_factsheet_january_2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 23
+  },
+  "Bandhan Mutual Fund": {
+    "url": "https://storage.googleapis.com/nonprod-static-assets-121to59kaawfgfi7bol/2026/02/d38e9f1b-bandhan-factsheet-january-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 68
+  },
+  "Bank of India Mutual Fund": {
+    "url": "https://www.boimf.in/docs/default-source/investorcorner/factsheets/factsheet-january-2026.pdf?",
+    "month": "January 2026",
+    "expected_fund_count": 21
+  },
+  "Baroda BNP Paribas Mutual Fund": {
+    "url": "https://www.barodabnpparibasmf.in/assets/download_documents/Factsheet-January_2026_16627.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 47
+  },
+  "Canara Robeco Mutual Fund": {
+    "url": "https://www.canararobeco.com/wp-content/uploads/2026/02/Canara-Robeco-factsheet-as-on-January-2026-1.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 26
+  },
+  "Capitalmind Mutual Fund": {
+    "url": "https://capitalmindmf.com/uploads/Capitalmind_Factsheet_10_Jan2026_600f395ecc.pdf",
+    "month": "January 2026"
+  },
+  "Choice Mutual Fund": {
+    "url": "https://choicemf.com/factsheet/fund-fact-sheet-jan-2026.PDF",
+    "month": "January 2026"
+  },
+  "DSP Mutual Fund": {
+    "url": "https://www.dspim.com/media/pages/downloads/9d308f0a79-1771220180/dsp-factsheet-january-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 82
+  },
+  "Edelweiss Mutual Fund": {
+    "url": "https://www.edelweissmf.com/Files/downloads/FACTSHEETS/FACTSHEETS/2026/Jan/Published/Edelweiss%20Factsheet%20January%202026_17022026_055059_PM.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 61
+  },
+  "Franklin Templeton Mutual Fund": {
+    "url": "https://www.franklintempletonindia.com/download/en-in/fund-factsheets/39ddf684-7204-473e-a97b-d43dfc81fc33/Factsheet-as-on-January-30-2026_web.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 33
+  },
+  "Groww Mutual Fund": {
+    "url": "https://assets-netstorage.growwmf.in/compliance_docs/Downloads/Fact%20Sheet/2025%20-%202026/Monthly%20Factsheet%20-%20Jan%2026.pdf?",
+    "month": "January 2026",
+    "expected_fund_count": 50
+  },
+  "HDFC Mutual Fund": {
+    "url": "https://files.hdfcfund.com/s3fs-public/2026-02/HDFC%20MF%20Factsheet%20-%20January%202026_0.pdf?",
+    "month": "January 2026"
+  },
+  "Helios Mutual Fund": {
+    "url": "https://www.heliosmf.in/wp-content/uploads/2026/02/Helios-Factsheet_January-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 7
+  },
+  "HSBC Mutual Fund": {
+    "url": "https://www.assetmanagement.hsbc.co.in/assets/documents/mutual-funds/en/1b17eb3e-5390-4221-958a-88207f1faca4/the-asset-january-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 44
+  },
+  "ICICI Prudential Mutual Fund": {
+    "url": "https://digitalfactsheet.icicipruamc.com/fact/pdf/fund-factsheet-for-january-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 55
+  },
+  "Invesco Mutual Fund": {
+    "url": "https://invescomutualfund.com/docs/default-source/factsheet/invesco-mf-factsheet---january-2026.pdf?",
+    "month": "January 2026",
+    "expected_fund_count": 43
+  },
+  "ITI Mutual Fund": {
+    "url": "https://itiamc.com/admin/pdf/1771670722-ITI_FACTSHEET_FEBRUARY_2026.pdf",
+    "month": "January 2026",
+    "pattern": "C",
+    "note": "January data published in February"
+  },
+  "Jio BlackRock Mutual Fund": {
+    "url": "https://cdnstorage-ddh3hqhvg3gyedd9.a02.azurefd.net/brcms/jioblackro-mkgggldg-436951.pdf",
+    "month": "January 2026",
+    "pattern": "C"
+  },
+  "JM Financial Mutual Fund": {
+    "url": "https://www.jmfinancialmf.com/CMS/downloads/Factsheet/Factsheet/Factsheet%20January%202026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 16
+  },
+  "Kotak Mutual Fund": {
+    "url": "https://www.kotakmf.com/Information/forms-and-downloads/Factsheet/Factsheet_for_January_2026/KotakMFFactsheetJanuary2026.pdf",
+    "month": "January 2026"
+  },
+  "LIC Mutual Fund": {
+    "url": "https://www.licmf.com/assets/downloads/monthly_fact_sheet/2025-2026/02/lic-mf-factsheet-31st-January-2025-787913413.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 40
+  },
+  "Mahindra Manulife Mutual Fund": {
+    "url": "https://www.mahindramanulife.com/uploads/download/6692d134-1a4b-47f2-bf8b-24f8efc49f12.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 26
+  },
+  "Mirae Asset Mutual Fund": {
+    "url": "https://www.miraeassetmf.co.in/docs/default-source/fachsheet/active-factsheet---january-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 27
+  },
+  "Motilal Oswal Mutual Fund": {
+    "url": "https://www.motilaloswalmf.com/CMS/assets/uploads/Documents/28c41-most-factsheet-january-2026-active.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 22
+  },
+  "Navi Mutual Fund": {
+    "url": "https://public-assets.prod.navi-tech.in/navi-website-assests/documents/Active_Fund_Jan_26_20260211200347.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 6
+  },
+  "Nippon India Mutual Fund": {
+    "url": "https://mf.nipponindiaim.com/InvestorServices/FactSheets/Nippon-FS-Jan-2026.pdf",
+    "month": "January 2026"
+  },
+  "NJ Mutual Fund": {
+    "url": "https://downloads.njmutualfund.com/viewfile.php?file=NJ-MF---Factsheet---January-2026-20260210053915.pdf",
+    "month": "January 2026"
+  },
+  "Old Bridge Mutual Fund": {
+    "url": "https://www.oldbridgemf.com/uploads/Old_Bridge_Mutual_Fund_Factsheet_January_2026_c711f121dc.pdf",
+    "month": "January 2026",
+    "pattern": "C"
+  },
+  "PGIM India Mutual Fund": {
+    "url": "https://www.pgimindia.com/api/v1/brochure/about-us/image/Factsheet%20-%20January%202026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 25
+  },
+  "PPFAS Mutual Fund": {
+    "url": "https://amc.ppfas.com/downloads/factsheet/2026/ppfas-mf-factsheet-for-January-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 6
+  },
+  "quant Mutual Fund": {
+    "url": "https://quantmutual.com/Admin/Factsheet/quant_Factsheet_January_2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 29
+  },
+  "Quantum Mutual Fund": {
+    "url": "https://www.quantumamc.com/FileCDN/FactSheet/54ae1d5a-4bd2-45df-8d18-30ea05ae89fc.pdf",
+    "month": "January 2026",
+    "pattern": "C"
+  },
+  "Samco Mutual Fund": {
+    "url": "https://media1.samco.in/scomamc/amc_documents/Factsheet-January2026_1769959976.pdf",
+    "month": "January 2026",
+    "pattern": "C"
+  },
+  "SBI Mutual Fund": {
+    "url": "https://www.sbimf.com/docs/default-source/scheme-factsheets/all-sbimf-schemes-factsheet-january-2026.pdf?",
+    "month": "January 2026",
+    "expected_fund_count": 55
+  },
+  "Shriram Mutual Fund": {
+    "url": "https://cdn.shriramamc.in/uploads/fact-sheet/Fact-Sheet/2025-2026/SAMC-Factsheet-(Full)-Jan-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 10
+  },
+  "Sundaram Mutual Fund": {
+    "url": "https://www.sundarammutual.com/uploaddir/consolidated_factsheet/Consolidated_Factsheet_2_2026_120226_154921.pdf",
+    "month": "January 2026",
+    "pattern": "C"
+  },
+  "Tata Mutual Fund": {
+    "url": "https://www.tatamutualfund.com/system/files/2026-02/TataMF%20Factsheet-January%202026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 64
+  },
+  "Taurus Mutual Fund": {
+    "url": "https://www.taurusmutualfund.com/sites/default/files/downloads/Taurus_Times_Jan_2026.pdf",
+    "month": "January 2026"
+  },
+  "Trust Mutual Fund": {
+    "url": "https://www.trustmf.com/trustmfsys/wp-content/uploads/2026/02/TRUSTMF-Factsheet-Jan-2026.pdf",
+    "month": "January 2026",
+    "expected_fund_count": 10
+  },
+  "Unifi Mutual Fund": {
+    "url": "https://unifimf.com/wp-content/uploads/fund-sheets/Unifi-MF-Factsheet-Jan26.pdf",
+    "month": "January 2026"
+  },
+  "Union Mutual Fund": {
+    "url": "https://www.unionmf.com/docs/default-source/downloads/scheme-disclosures/factsheets/factsheet-january-2026.pdf?",
+    "month": "January 2026",
+    "expected_fund_count": 32
+  },
+  "UTI Mutual Fund": {
+    "url": "https://d3ce1o48hc5oli.cloudfront.net/s3fs-public/2026-01/uti_fund_watch-january_2026.pdf?",
+    "month": "January 2026",
+    "expected_fund_count": 44
+  },
+  "WhiteOak Capital Mutual Fund": {
+    "url": "https://content.whiteoakamc.com/Whiteoak_Capital_Factsheet_as_at_Jan_2026_e489e11ce1.pdf",
+    "month": "January 2026",
+    "pattern": "C"
+  },
+  "Zerodha Mutual Fund": {
+    "url": "https://assets.zerodhafundhouse.com/offer-documents/factsheet/Factsheet%20-%20Dec%2025.pdf",
+    "month": "December 2025",
+    "pattern": "A",
+    "expected_fund_count": 16
+  }
 }
