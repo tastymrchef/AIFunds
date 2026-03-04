@@ -37,3 +37,8 @@ streamlit/__pycache__/
 # Local dotenv files
 .env.local
 .env.*.local
+
+# Documents
+*.docx
+*.doc
+*.pdf

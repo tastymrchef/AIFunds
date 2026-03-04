@@ -158,5 +158,11 @@ st.divider()
 # CTA
 st.subheader("Find Your Fund")
 st.caption("Search and analyse any Indian mutual fund with AI")
-if st.button("🔍 Search Funds", use_container_width=True):
-    st.switch_page("pages/fund_search.py")
+
+col1, col2 = st.columns(2)
+with col1:
+    if st.button("🔍 Search Funds", use_container_width=True):
+        st.switch_page("pages/fund_search.py")
+with col2:
+    if st.button("📦 Find by Stock / Theme", use_container_width=True):
+        st.switch_page("pages/holdings_search.py")
