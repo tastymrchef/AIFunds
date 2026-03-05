@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
+yfinance
+openai
+requests
+numpy
+pandas
+rapidfuzz
+scikit-learn
+PyMuPDF

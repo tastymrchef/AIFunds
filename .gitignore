@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+mutualfunds-ai/AI/
+venv/
+.venv/
+env/
+
+# Cache & data files
+mutualfunds-ai/cache/factsheets/
+mutualfunds-web/backend/cache/
+*.pdf
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node / Next.js
+mutualfunds-web/frontend/node_modules/
+mutualfunds-web/frontend/.next/
+mutualfunds-web/frontend/.turbo/
+mutualfunds-web/frontend/out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+*.swp

@@ -1,10 +1,15 @@
 import json
+import os
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import cosine_similarity
 
+# Always resolve cache relative to the mutualfunds-ai root, not the CWD
+_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # …/mutualfunds-ai
+
 def load_universe():
-    with open("cache/fund_universe.json", "r") as f:
+    path = os.path.join(_BASE, "cache", "fund_universe.json")
+    with open(path, "r") as f:
         cache = json.load(f)
     return cache["data"]
 

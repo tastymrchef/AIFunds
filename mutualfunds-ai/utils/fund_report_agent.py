@@ -15,7 +15,10 @@ load_dotenv()
 openai_client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 sarvam_client = SarvamAI(api_subscription_key=os.getenv("SARVAM_API_KEY"))
 
-CACHE_DIR = "cache/factsheets"
+# Always resolve cache paths relative to mutualfunds-ai root, not CWD
+_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # …/mutualfunds-ai
+
+CACHE_DIR = os.path.join(_BASE, "cache", "factsheets")
 QUALITY_THRESHOLD = 70
 
 
@@ -87,7 +90,7 @@ def find_individual_url(fund_house):
 def find_factsheet_url(fund_house, scheme_name):
     # Load cache
     try:
-        with open("cache/amc_factsheet_urls.json", "r") as f:
+        with open(os.path.join(_BASE, "cache", "amc_factsheet_urls.json"), "r") as f:
             amc_urls = json.load(f)
     except Exception:
         amc_urls = {}
