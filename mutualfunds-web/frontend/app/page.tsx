@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { MetricCard } from "@/components/MetricCard";
 import { Spinner } from "@/components/Spinner";
-import { Search } from "lucide-react";
+import { Search, ExternalLink } from "lucide-react";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -22,6 +22,33 @@ interface TopPerformers {
   [sector: string]: TopFund[];
 }
 
+interface MarketHealthWindow {
+  score: number;
+  label: "Bullish" | "Bearish" | "Neutral";
+  color: string;
+  nifty_pct: number;
+  sensex_pct: number;
+  gold_pct: number;
+  silver_pct: number;
+}
+
+interface MarketHealth {
+  score: number;
+  label: "Bullish" | "Bearish" | "Neutral";
+  color: string;
+  summary: string;
+  today: MarketHealthWindow;
+  two_week: MarketHealthWindow;
+}
+
+interface NewsItem {
+  title: string;
+  source: string;
+  url: string;
+  timestamp: number;
+  time_ago: string;
+}
+
 // ── Main Page ─────────────────────────────────────────────────────────────────
 
 export default function HomePage() {
@@ -29,16 +56,30 @@ export default function HomePage() {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<{ scheme_code: string; scheme_name: string }[]>([]);
   const [pulse, setPulse] = useState<PulseData | null>(null);
+  const [health, setHealth] = useState<MarketHealth | null>(null);
+  const [news, setNews] = useState<NewsItem[]>([]);
+  const [newsLoading, setNewsLoading] = useState(true);
   const [topPerformers, setTopPerformers] = useState<TopPerformers | null>(null);
   const [tpDate, setTpDate] = useState<string>("");
   const debounceRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Load market pulse
+  // Load market pulse + health in parallel
   useEffect(() => {
     fetch("/api/market/pulse")
       .then((r) => r.json())
       .then(setPulse)
       .catch(console.error);
+
+    fetch("/api/market/health")
+      .then((r) => r.json())
+      .then(setHealth)
+      .catch(console.error);
+
+    fetch("/api/market/news")
+      .then((r) => r.json())
+      .then((d) => setNews(d.news ?? []))
+      .catch(console.error)
+      .finally(() => setNewsLoading(false));
   }, []);
 
   // Load top performers
@@ -131,6 +172,99 @@ export default function HomePage() {
         )}
       </section>
 
+      {/* Market Health — Today vs 2-Week */}
+      {health && (
+        <section>
+          <div className="flex items-baseline gap-3 mb-4">
+            <h2 className="text-xl font-semibold">Market Mood</h2>
+            {/* Overall badge driven by 2-week score */}
+            <span className="text-sm font-semibold px-2 py-0.5 rounded-full" style={{ color: health.color, background: health.color + "22" }}>
+              {health.label}
+            </span>
+          </div>
+          <p className="text-[#888] text-sm mb-4">{health.summary}</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Today card */}
+            {(["today", "two_week"] as const).map((key) => {
+              const w = health[key];
+              const isToday = key === "today";
+              const title = isToday ? "Today" : "Last 2 Weeks";
+              const rows: [string, number][] = [
+                ["Nifty 50",  w.nifty_pct],
+                ["Sensex",    w.sensex_pct],
+                ["Gold",      w.gold_pct],
+                ["Silver",    w.silver_pct],
+              ];
+              return (
+                <div key={key} className="bg-[#111] border rounded-xl p-4 space-y-3" style={{ borderColor: w.color + "44" }}>
+                  {/* Header */}
+                  <div className="flex items-center justify-between">
+                    <p className="text-sm font-semibold text-[#aaa]">{title}</p>
+                    <div className="flex items-center gap-2">
+                      <div className="w-10 h-10 rounded-full flex flex-col items-center justify-center border-2 shrink-0" style={{ borderColor: w.color }}>
+                        <span className="text-xs font-bold leading-none" style={{ color: w.color }}>{w.score}</span>
+                        <span className="text-[9px] text-[#666] leading-none">/ 100</span>
+                      </div>
+                      <span className="text-sm font-bold" style={{ color: w.color }}>{w.label}</span>
+                    </div>
+                  </div>
+                  {/* Index rows */}
+                  <div className="space-y-2">
+                    {rows.map(([label, val]) => {
+                      const pos = val >= 0;
+                      const c = pos ? "#00ff88" : "#ff4444";
+                      const barW = Math.min(Math.abs(val) * 10, 100);   // 10% move = full bar
+                      return (
+                        <div key={label} className="flex items-center gap-3">
+                          <span className="text-xs text-[#666] w-16 shrink-0">{label}</span>
+                          <div className="flex-1 h-1.5 bg-[#222] rounded-full overflow-hidden">
+                            <div className="h-full rounded-full" style={{ width: `${barW}%`, background: c }} />
+                          </div>
+                          <span className="text-xs font-medium w-14 text-right" style={{ color: c }}>
+                            {pos ? "+" : ""}{val}%
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* Market News */}
+      <section>
+        <h2 className="text-xl font-semibold mb-4">📰 Market News</h2>
+        {newsLoading ? (
+          <div className="flex gap-3 items-center text-[#888]"><Spinner /> Loading news...</div>
+        ) : news.length === 0 ? (
+          <p className="text-[#555] text-sm">No news available right now.</p>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {news.map((item, i) => (
+              <a
+                key={i}
+                href={item.url || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#111] border border-[#2a2a2a] hover:border-[#444] rounded-xl p-4 flex flex-col gap-2 transition-colors group"
+              >
+                <p className="text-sm text-white leading-snug group-hover:text-[#00ff88] transition-colors line-clamp-2">
+                  {item.title}
+                </p>
+                <div className="flex items-center justify-between mt-auto">
+                  <span className="text-xs text-[#555]">{item.source} · {item.time_ago}</span>
+                  {item.url && <ExternalLink size={12} className="text-[#444] group-hover:text-[#888] transition-colors" />}
+                </div>
+              </a>
+            ))}
+          </div>
+        )}
+      </section>
+
       {/* Top Performers */}
       <section>
         <div className="flex items-baseline justify-between mb-4">
@@ -172,23 +306,6 @@ export default function HomePage() {
         )}
       </section>
 
-      {/* CTAs */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-8">
-        <button
-          onClick={() => router.push("/funds")}
-          className="bg-[#111] border border-[#2a2a2a] hover:border-[#00ff88] rounded-xl p-5 text-left transition-colors group"
-        >
-          <p className="text-lg font-semibold group-hover:text-[#00ff88] transition-colors">🔍 Search Funds</p>
-          <p className="text-[#888] text-sm mt-1">Analyse any Indian mutual fund with AI</p>
-        </button>
-        <button
-          onClick={() => router.push("/stocks")}
-          className="bg-[#111] border border-[#2a2a2a] hover:border-[#4da6ff] rounded-xl p-5 text-left transition-colors group"
-        >
-          <p className="text-lg font-semibold group-hover:text-[#4da6ff] transition-colors">📦 Find by Stock</p>
-          <p className="text-[#888] text-sm mt-1">See which funds hold Zomato, HDFC Bank, or any stock</p>
-        </button>
-      </section>
     </div>
   );
 }
