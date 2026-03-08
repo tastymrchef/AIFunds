@@ -15,7 +15,7 @@ PYTHON_PROJECT = os.path.abspath(
 )
 sys.path.insert(0, PYTHON_PROJECT)
 
-from routers import funds, holdings, market
+from routers import funds, holdings, market, portfolio
 
 app = FastAPI(title="MutualFund AI API", version="1.0.0")
 
@@ -28,9 +28,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(funds.router,    prefix="/api/funds",    tags=["funds"])
-app.include_router(holdings.router, prefix="/api/holdings", tags=["holdings"])
-app.include_router(market.router,   prefix="/api/market",   tags=["market"])
+app.include_router(funds.router,      prefix="/api/funds",      tags=["funds"])
+app.include_router(holdings.router,   prefix="/api/holdings",   tags=["holdings"])
+app.include_router(market.router,     prefix="/api/market",     tags=["market"])
+app.include_router(portfolio.router,  prefix="/api/portfolio",  tags=["portfolio"])
 
 @app.get("/api/health")
 def health():

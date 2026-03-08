@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { TrendingUp, Search, Package } from "lucide-react";
+import { TrendingUp, Search, Package, FolderOpen } from "lucide-react";
 import clsx from "clsx";
 
 const links = [
-  { href: "/",        label: "Home",           icon: TrendingUp },
-  { href: "/funds",   label: "Search Funds",   icon: Search },
-  { href: "/stocks",  label: "Find by Stock",  icon: Package },
+  { href: "/",          label: "Home",          icon: TrendingUp },
+  { href: "/funds",     label: "Search Funds",  icon: Search },
+  { href: "/stocks",    label: "Find by Stock", icon: Package },
+  { href: "/portfolio", label: "My Portfolio",  icon: FolderOpen },
 ];
 
 export function Navbar() {
